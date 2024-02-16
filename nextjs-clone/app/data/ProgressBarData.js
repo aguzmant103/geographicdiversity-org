@@ -1,21 +1,21 @@
 export const sigmaData = [
   {
-    title: "Prysm",
+    title: "North America",
     percentage: "38.7%",
     color: "#ffc107",
   },
   {
-    title: "Lighthouse",
+    title: "Europe",
     percentage: "32.56%",
     color: "#198754",
   },
   {
-    title: "Teku",
+    title: "Asia",
     percentage: "18.82%",
     color: "#198754",
   },
   {
-    title: "Nimbus",
+    title: "Latin America",
     percentage: "8.79%",
     color: "#198754",
   },
