@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.striped-bg {
+  background-image: linear-gradient(
+    45deg,
+    #e6d0d5 25%,
+    #e9ecef 25%,
+    #e9ecef 50%,
+    #e6d0d5 50%,
+    #e6d0d5 75%,
+    #e9ecef 75%
+  );
+  background-size: 15px 15px;
+}
+
+.row-title {
+  font-size: 15px !important;
+}
