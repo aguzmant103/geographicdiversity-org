@@ -1,36 +1,36 @@
 export const sigmaData = [
   {
-    title: "North America",
-    percentage: "38.7%",
+    title: "Europe",
+    percentage: "47.16%",
     color: "#ffc107",
   },
   {
-    title: "Europe",
-    percentage: "32.56%",
-    color: "#198754",
+    title: "North America",
+    percentage: "37.44%",
+    color: "#ffc107",
   },
   {
     title: "Asia",
-    percentage: "18.82%",
+    percentage: "12.76%",
+    color: "#198754",
+  },
+  {
+    title: "Oceania",
+    percentage: "1.94%",
     color: "#198754",
   },
   {
     title: "Latin America",
-    percentage: "8.79%",
+    percentage: "0.52%",
     color: "#198754",
   },
   {
-    title: "Lodestar",
-    percentage: "1.12%",
+    title: "Africa",
+    percentage: "0.18%",
     color: "#198754",
   },
   {
     title: "Other",
-    percentage: "0.0%",
-    color: "#198754",
-  },
-  {
-    title: "Grandine",
     percentage: "0.0%",
     color: "#198754",
   },

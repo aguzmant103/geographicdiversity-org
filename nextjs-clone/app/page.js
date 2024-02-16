@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Client Diversity | Ethereum</title>
+        <title>Geographic Diversity | Ethereum</title>
       </Head>
       <div className="container">
         <HeroSection />
