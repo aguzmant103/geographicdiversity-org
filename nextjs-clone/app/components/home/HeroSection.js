@@ -12,7 +12,7 @@ const HeroSection = () => {
         Diversify Now
       </h1>
       <p className="text-[20px] md:text-[24px] leading-[24px] md:leading-[28px] font-[400] opacity-90 text-center">
-        Improve Ethereum&apos;s resilience by using a minority client
+        Improve Ethereum&apos;s resilience by staking in minority regions
       </p>
       <div className="flex items-center justify-center flex-wrap gap-[1rem] my-[1rem]">
         <Link href="#switch">
@@ -23,7 +23,7 @@ const HeroSection = () => {
                 : "bg-white text-black"
             }`}
           >
-            Switch Clients
+            Switch Regions
           </button>
         </Link>
         <Link href="#distribution">
