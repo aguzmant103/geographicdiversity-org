@@ -7,7 +7,7 @@ const HeroSection = () => {
   const resolvedTheme = useCustomTheme();
 
   return (
-    <div className="flex flex-col justify-center items-center gap-[1rem] h-screen">
+    <div className="flex flex-col justify-center items-center gap-[1rem] h-136">
       <h1 className="text-[40px] md:text-[75px] leading-[45px] md:leading-[70px] font-[800] opacity-90 text-center">
         Diversify Now
       </h1>
