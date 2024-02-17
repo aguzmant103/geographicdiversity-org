@@ -8,7 +8,7 @@ const LogoSection = () => {
   return (
     <div
       className={`py-[2rem] ${
-        resolvedTheme === "dark" ? "bg-[#16191c]" : "bg-white"
+        resolvedTheme === "dark" ? "bg-[#212529]" : "bg-[#f8f9fa]"
       }`}
     >
       <div className="container grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-[1.5rem] place-items-center px-[20px]">
