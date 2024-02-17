@@ -134,7 +134,7 @@ const ConsensusClients = () => {
               name="progress"
               id="sigma"
               value="sigma"
-              checked={activeRadio === "sigma"}
+              defaultchecked={activeRadio === "sigma"}
             />
             <label htmlFor="sigma" className="text-[15px] font-[500]">
               Sigma Prime&apos;s Blockprint

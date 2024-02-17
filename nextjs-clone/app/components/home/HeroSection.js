@@ -18,9 +18,9 @@ const HeroSection = () => {
         <Link href="#switch">
           <button
             className={`px-[24px] py-[12px] rounded-[10px] text-[18px] opacity-90 ${
-              resolvedTheme === "light"
-                ? "bg-black text-white"
-                : "bg-white text-black"
+              resolvedTheme === "dark"
+                ? "bg-white text-black"
+                : "bg-black text-white"
             }`}
           >
             Switch Regions
@@ -29,9 +29,9 @@ const HeroSection = () => {
         <Link href="#distribution">
           <button
             className={`px-[24px] py-[10px] rounded-[10px] text-[18px] border ${
-              resolvedTheme === "light"
-                ? "text-black border-black"
-                : "text-white border-white"
+              resolvedTheme === "dark"
+                ? "text-white border-white"
+                : "text-black border-black"
             }`}
           >
             Dashboard
