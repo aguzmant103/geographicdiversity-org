@@ -8,7 +8,7 @@ permalink: /feed/
   <div class="text-center">
     <h1 class="display-6 fw-bold mb-3">Feed</h1>
     <p class="col-md-10 col-lg-8 mx-auto lead">
-      Client diversity news and developments.
+      Geographic diversity news and developments.
     </p>
     <a href="/contribute/" class="btn btn-outline-dark btn-lg px-4 m-1">Submit Link</a>
   </div>

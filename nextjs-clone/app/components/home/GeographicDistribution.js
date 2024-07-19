@@ -1,10 +1,10 @@
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React from "react";
 import ConsensusClients from "./ConsensusClients";
 import ExecutionClients from "./ExecutionClients";
 import { useCustomTheme } from "./GetTheme";
 
-const ClientDistribution = () => {
+const GeographicDistribution = () => {
   const resolvedTheme = useCustomTheme();
 
   return (
@@ -14,7 +14,7 @@ const ClientDistribution = () => {
     >
       <div className="flex flex-col items-center gap-[10px]">
         <h1 className="text-[32px] md:text-[40px] leading-[35px] font-[800] opacity-90 text-center">
-          Client Distribution
+          Geographic Distribution
         </h1>
         <Link
           href="https://www.rated.network/?network=mainnet&view=pool&timeWindow=1d&page=1&poolType=all"
@@ -43,4 +43,4 @@ const ClientDistribution = () => {
   );
 };
 
-export default ClientDistribution;
+export default GeographicDistribution;
