@@ -1,6 +1,6 @@
 # Read about configuration here: https://jekyllrb.com/docs/configuration/options/
 title: Geographic Diversity | Ethereum Costa Rica
-description: Improve Ethereum's resilience and protect the network by using a minority client.
+description: Improve Ethereum's resilience and protect the network by validating in a minority region.
 keywords: ethereum, client, diversity, eth, beacon, chain
 url: https://geographicdiversity.org
 permalink: pretty # Do not change this, it will break all links
