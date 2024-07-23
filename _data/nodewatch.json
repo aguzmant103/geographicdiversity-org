@@ -1,935 +1,2494 @@
 {
-  "summary": {
-    "count": 11567,
-    "countries": {
-      "Germany": 1962,
-      "United States": 3782,
-      "Brazil": 20,
-      "Netherlands": 8,
-      "Romania": 27,
-      "Finland": 846,
-      "Turkey": 19,
-      "Hong Kong": 77,
-      "Ireland": 114,
-      "Lithuania": 55,
-      "Singapore": 281,
-      "Canada": 348,
-      "Sweden": 58,
-      "Moldova": 155,
-      "Switzerland": 209,
-      "South Africa": 37,
-      "United Kingdom": 454,
-      "South Korea": 189,
-      "France": 577,
-      "China": 106,
-      "Spain": 109,
-      "Australia": 249,
-      "Belgium": 118,
-      "Japan": 226,
-      "New Zealand": 35,
-      "India": 53,
-      "Austria": 127,
-      "The Netherlands": 400,
-      "Russia": 128,
-      "Chile": 5,
-      "Portugal": 55,
-      "Latvia": 9,
-      "Mexico": 32,
-      "Poland": 111,
-      "Iceland": 2,
-      "Israel": 32,
-      "Czechia": 50,
-      "Norway": 51,
-      "Ukraine": 30,
-      "Thailand": 30,
-      "Italy": 41,
-      "Slovakia": 11,
-      "Indonesia": 8,
-      "Malta": 11,
-      "Kazakhstan": 3,
-      "Bulgaria": 33,
-      "Georgia": 2,
-      "Vietnam": 10,
-      "Denmark": 34,
-      "Hungary": 12,
-      "Taiwan": 48,
-      "Argentina": 19,
-      "Puerto Rico": 4,
-      "United Arab Emirates": 5,
-      "Slovenia": 26,
-      "Croatia": 15,
-      "Serbia": 10,
-      "Estonia": 13,
-      "Mauritius": 2,
-      "Gibraltar": 2,
-      "Montenegro": 2,
-      "Andorra": 4,
-      "Malaysia": 10,
-      "Jersey": 1,
-      "Qatar": 2,
-      "Panama": 3,
-      "Greece": 6,
-      "Bosnia and Herzegovina": 1,
-      "Cyprus": 8,
-      "Bangladesh": 1,
-      "Jordan": 7,
-      "Luxembourg": 17,
-      "Seychelles": 3,
-      "Uzbekistan": 1,
-      "Kyrgyzstan": 1,
-      "Colombia": 2,
-      "Paraguay": 3,
-      "Kuwait": 2,
-      "Ecuador": 2,
-      "Belarus": 1,
-      "Morocco": 1,
-      "Peru": 1,
-      "Philippines": 1,
-      "El Salvador": 1,
-      "Uruguay": 1
-    },
-    "agents": {
-      "prysm": 4483,
-      "lighthouse": 2481,
-      "teku": 2362,
-      "nimbus": 1432,
-      "grandine": 49,
-      "lodestar": 721,
-      "others": 39
-    }
-  },
-  "perc": {
-    "countries": {
-      "Germany": 16.962047203250627,
-      "United States": 32.69646407884499,
-      "Brazil": 0.17290567995158643,
-      "Netherlands": 0.06916227198063456,
-      "Romania": 0.23342266793464164,
-      "Finland": 7.313910261952106,
-      "Turkey": 0.1642603959540071,
-      "Hong Kong": 0.6656868678136076,
-      "Ireland": 0.9855623757240426,
-      "Lithuania": 0.47549061986686264,
-      "Singapore": 2.429324803319789,
-      "Canada": 3.0085588311576035,
-      "Sweden": 0.5014264718596005,
-      "Moldova": 1.3400190196247945,
-      "Switzerland": 1.806864355494078,
-      "South Africa": 0.31987550791043484,
-      "United Kingdom": 3.9249589349010114,
-      "South Korea": 1.6339586755424917,
-      "France": 4.9883288666032675,
-      "China": 0.916400103743408,
-      "Spain": 0.942335955736146,
-      "Australia": 2.152675715397251,
-      "Belgium": 1.0201435117143598,
-      "Japan": 1.9538341834529267,
-      "New Zealand": 0.30258493991527624,
-      "India": 0.458200051871704,
-      "Austria": 1.0979510676925737,
-      "The Netherlands": 3.4581135990317278,
-      "Russia": 1.106596351690153,
-      "Chile": 0.04322641998789661,
-      "Portugal": 0.47549061986686264,
-      "Latvia": 0.07780755597821389,
-      "Mexico": 0.27664908792253823,
-      "Poland": 0.9596265237313045,
-      "Iceland": 0.01729056799515864,
-      "Israel": 0.27664908792253823,
-      "Czechia": 0.43226419987896597,
-      "Norway": 0.4409094838765453,
-      "Ukraine": 0.2593585199273796,
-      "Thailand": 0.2593585199273796,
-      "Italy": 0.35445664390075216,
-      "Slovakia": 0.09509812397337253,
-      "Indonesia": 0.06916227198063456,
-      "Malta": 0.09509812397337253,
-      "Kazakhstan": 0.025935851992737964,
-      "Bulgaria": 0.2852943719201176,
-      "Georgia": 0.01729056799515864,
-      "Vietnam": 0.08645283997579321,
-      "Denmark": 0.2939396559176969,
-      "Hungary": 0.10374340797095186,
-      "Taiwan": 0.4149736318838074,
-      "Argentina": 0.1642603959540071,
-      "Puerto Rico": 0.03458113599031728,
-      "United Arab Emirates": 0.04322641998789661,
-      "Slovenia": 0.22477738393706231,
-      "Croatia": 0.1296792599636898,
-      "Serbia": 0.08645283997579321,
-      "Estonia": 0.11238869196853116,
-      "Mauritius": 0.01729056799515864,
-      "Gibraltar": 0.01729056799515864,
-      "Montenegro": 0.01729056799515864,
-      "Andorra": 0.03458113599031728,
-      "Malaysia": 0.08645283997579321,
-      "Jersey": 0.00864528399757932,
-      "Qatar": 0.01729056799515864,
-      "Panama": 0.025935851992737964,
-      "Greece": 0.05187170398547593,
-      "Bosnia and Herzegovina": 0.00864528399757932,
-      "Cyprus": 0.06916227198063456,
-      "Bangladesh": 0.00864528399757932,
-      "Jordan": 0.06051698798305524,
-      "Luxembourg": 0.14696982795884844,
-      "Seychelles": 0.025935851992737964,
-      "Uzbekistan": 0.00864528399757932,
-      "Kyrgyzstan": 0.00864528399757932,
-      "Colombia": 0.01729056799515864,
-      "Paraguay": 0.025935851992737964,
-      "Kuwait": 0.01729056799515864,
-      "Ecuador": 0.01729056799515864,
-      "Belarus": 0.00864528399757932,
-      "Morocco": 0.00864528399757932,
-      "Peru": 0.00864528399757932,
-      "Philippines": 0.00864528399757932,
-      "El Salvador": 0.00864528399757932,
-      "Uruguay": 0.00864528399757932
-    },
-    "agents": {
-      "prysm": 38.75680816114809,
-      "lighthouse": 21.448949597994293,
-      "teku": 20.420160802282357,
-      "nimbus": 12.380046684533587,
-      "grandine": 0.4236189158813867,
-      "lodestar": 6.23324976225469,
-      "others": 0.3371660759055935
-    }
-  },
   "raw": {
-    "Germany": {
-      "count": 1962,
-      "agents": {
-        "prysm": 922,
-        "lighthouse": 479,
-        "teku": 233,
-        "nimbus": 215,
-        "lodestar": 107,
-        "grandine": 4,
-        "others": 2
-      }
-    },
-    "United States": {
-      "count": 3782,
-      "agents": {
-        "lighthouse": 752,
-        "prysm": 1237,
-        "teku": 1229,
-        "grandine": 5,
-        "nimbus": 351,
-        "lodestar": 183,
-        "others": 25
-      }
-    },
-    "Brazil": {
-      "count": 20,
-      "agents": {
-        "prysm": 6,
-        "teku": 2,
-        "lighthouse": 4,
-        "lodestar": 1,
-        "others": 1,
-        "nimbus": 6
-      }
-    },
-    "Netherlands": {
-      "count": 8,
-      "agents": {
-        "lighthouse": 2,
-        "prysm": 5,
-        "teku": 1
-      }
-    },
-    "Romania": {
-      "count": 27,
-      "agents": {
-        "lighthouse": 7,
-        "prysm": 17,
-        "teku": 1,
-        "nimbus": 2
-      }
-    },
-    "Finland": {
-      "count": 846,
-      "agents": {
-        "lighthouse": 211,
-        "prysm": 328,
-        "teku": 77,
-        "nimbus": 82,
-        "lodestar": 144,
-        "others": 3,
-        "grandine": 1
-      }
-    },
-    "Turkey": {
-      "count": 19,
-      "agents": {
-        "teku": 2,
-        "prysm": 5,
-        "lodestar": 4,
-        "lighthouse": 8
-      }
-    },
-    "Hong Kong": {
-      "count": 77,
-      "agents": {
-        "teku": 12,
-        "prysm": 52,
-        "nimbus": 5,
-        "lodestar": 1,
-        "lighthouse": 5,
-        "grandine": 2
-      }
-    },
-    "Ireland": {
-      "count": 114,
-      "agents": {
-        "prysm": 55,
-        "teku": 21,
-        "lighthouse": 37,
-        "nimbus": 1
-      }
-    },
-    "Lithuania": {
-      "count": 55,
-      "agents": {
-        "prysm": 25,
-        "teku": 11,
-        "nimbus": 3,
-        "lodestar": 5,
-        "lighthouse": 9,
-        "grandine": 2
-      }
-    },
-    "Singapore": {
-      "count": 281,
-      "agents": {
-        "prysm": 132,
-        "teku": 31,
-        "nimbus": 13,
-        "lodestar": 16,
-        "lighthouse": 83,
-        "others": 6
-      }
-    },
-    "Canada": {
-      "count": 348,
-      "agents": {
-        "prysm": 126,
-        "lighthouse": 81,
-        "teku": 53,
-        "nimbus": 54,
-        "lodestar": 32,
-        "others": 2
-      }
-    },
-    "Sweden": {
-      "count": 58,
-      "agents": {
-        "prysm": 22,
-        "teku": 18,
-        "nimbus": 9,
-        "lighthouse": 9
-      }
-    },
-    "Moldova": {
-      "count": 155,
-      "agents": {
-        "nimbus": 151,
-        "teku": 1,
-        "prysm": 2,
-        "lighthouse": 1
-      }
-    },
-    "Switzerland": {
-      "count": 209,
-      "agents": {
-        "teku": 54,
-        "prysm": 68,
-        "nimbus": 41,
-        "lighthouse": 35,
-        "grandine": 3,
-        "lodestar": 8
-      }
-    },
-    "South Africa": {
-      "count": 37,
-      "agents": {
-        "lighthouse": 3,
-        "teku": 30,
-        "nimbus": 2,
-        "prysm": 2
-      }
-    },
-    "United Kingdom": {
-      "count": 454,
-      "agents": {
-        "prysm": 138,
-        "teku": 82,
-        "lighthouse": 129,
-        "nimbus": 58,
-        "lodestar": 45,
-        "grandine": 2
-      }
-    },
-    "South Korea": {
-      "count": 189,
-      "agents": {
-        "lighthouse": 59,
-        "teku": 21,
-        "prysm": 101,
-        "nimbus": 8
-      }
-    },
-    "France": {
-      "count": 577,
-      "agents": {
-        "prysm": 210,
-        "teku": 101,
-        "nimbus": 70,
-        "lodestar": 60,
-        "lighthouse": 113,
-        "grandine": 23
-      }
-    },
-    "China": {
-      "count": 106,
-      "agents": {
-        "prysm": 63,
-        "teku": 4,
-        "nimbus": 6,
-        "lighthouse": 32,
-        "lodestar": 1
-      }
-    },
-    "Spain": {
-      "count": 109,
-      "agents": {
-        "prysm": 42,
-        "teku": 19,
-        "lodestar": 9,
-        "lighthouse": 23,
-        "nimbus": 16
-      }
-    },
-    "Australia": {
-      "count": 249,
-      "agents": {
-        "prysm": 76,
-        "teku": 52,
-        "nimbus": 72,
-        "lighthouse": 42,
-        "lodestar": 6,
-        "grandine": 1
-      }
-    },
-    "Belgium": {
-      "count": 118,
-      "agents": {
-        "prysm": 62,
-        "teku": 15,
-        "nimbus": 18,
-        "lodestar": 10,
-        "lighthouse": 13
-      }
-    },
-    "Japan": {
-      "count": 226,
-      "agents": {
-        "prysm": 111,
-        "teku": 13,
-        "lighthouse": 73,
-        "nimbus": 22,
-        "grandine": 1,
-        "lodestar": 6
-      }
-    },
-    "New Zealand": {
-      "count": 35,
-      "agents": {
-        "teku": 5,
-        "prysm": 11,
-        "nimbus": 12,
-        "lighthouse": 6,
-        "lodestar": 1
-      }
-    },
-    "India": {
-      "count": 53,
-      "agents": {
-        "teku": 15,
-        "prysm": 20,
-        "lighthouse": 12,
-        "lodestar": 1,
-        "nimbus": 5
-      }
-    },
-    "Austria": {
-      "count": 127,
-      "agents": {
-        "teku": 21,
-        "prysm": 38,
-        "nimbus": 38,
-        "lodestar": 8,
-        "grandine": 2,
-        "lighthouse": 20
-      }
-    },
-    "The Netherlands": {
-      "count": 400,
-      "agents": {
-        "teku": 77,
-        "prysm": 198,
-        "nimbus": 42,
-        "lodestar": 20,
-        "lighthouse": 63
-      }
-    },
-    "Russia": {
-      "count": 128,
-      "agents": {
-        "teku": 13,
-        "prysm": 72,
-        "nimbus": 11,
-        "lighthouse": 29,
-        "lodestar": 3
-      }
-    },
-    "Chile": {
-      "count": 5,
-      "agents": {
-        "prysm": 2,
-        "lighthouse": 3
-      }
-    },
-    "Portugal": {
-      "count": 55,
-      "agents": {
-        "prysm": 26,
-        "teku": 10,
-        "nimbus": 4,
-        "lighthouse": 12,
-        "lodestar": 3
-      }
-    },
-    "Latvia": {
-      "count": 9,
-      "agents": {
-        "teku": 4,
-        "prysm": 3,
-        "lighthouse": 2
-      }
-    },
-    "Mexico": {
-      "count": 32,
-      "agents": {
-        "teku": 3,
-        "prysm": 18,
-        "lighthouse": 5,
-        "nimbus": 2,
-        "lodestar": 3,
-        "grandine": 1
-      }
-    },
-    "Poland": {
-      "count": 111,
-      "agents": {
-        "teku": 15,
-        "nimbus": 42,
-        "prysm": 41,
-        "lighthouse": 10,
-        "lodestar": 3
-      }
-    },
-    "Iceland": {
-      "count": 2,
-      "agents": {
-        "teku": 1,
-        "lighthouse": 1
-      }
-    },
-    "Israel": {
-      "count": 32,
-      "agents": {
-        "teku": 10,
-        "lighthouse": 10,
-        "prysm": 9,
-        "nimbus": 2,
-        "lodestar": 1
-      }
-    },
-    "Czechia": {
-      "count": 50,
-      "agents": {
-        "teku": 6,
-        "prysm": 20,
-        "nimbus": 5,
-        "lighthouse": 17,
-        "lodestar": 1,
-        "grandine": 1
-      }
-    },
-    "Norway": {
-      "count": 51,
-      "agents": {
-        "teku": 13,
-        "nimbus": 4,
-        "prysm": 13,
-        "lodestar": 8,
-        "lighthouse": 13
-      }
-    },
-    "Ukraine": {
-      "count": 30,
-      "agents": {
-        "teku": 7,
-        "prysm": 4,
-        "lodestar": 6,
-        "grandine": 1,
-        "lighthouse": 3,
-        "nimbus": 9
-      }
-    },
-    "Thailand": {
-      "count": 30,
-      "agents": {
-        "lighthouse": 3,
-        "teku": 6,
-        "nimbus": 1,
-        "prysm": 20
-      }
-    },
-    "Italy": {
-      "count": 41,
-      "agents": {
-        "lighthouse": 7,
-        "prysm": 15,
-        "teku": 9,
-        "lodestar": 4,
-        "nimbus": 6
-      }
-    },
-    "Slovakia": {
-      "count": 11,
-      "agents": {
-        "prysm": 7,
-        "teku": 2,
-        "lighthouse": 2
-      }
-    },
-    "Indonesia": {
-      "count": 8,
-      "agents": {
-        "teku": 1,
-        "prysm": 6,
-        "lighthouse": 1
-      }
-    },
-    "Malta": {
-      "count": 11,
-      "agents": {
-        "teku": 1,
-        "nimbus": 1,
-        "prysm": 8,
-        "lodestar": 1
-      }
-    },
-    "Kazakhstan": {
-      "count": 3,
-      "agents": {
-        "teku": 1,
-        "lighthouse": 2
-      }
-    },
-    "Bulgaria": {
-      "count": 33,
-      "agents": {
-        "teku": 4,
-        "prysm": 12,
-        "lighthouse": 8,
-        "lodestar": 5,
-        "nimbus": 4
-      }
-    },
-    "Georgia": {
-      "count": 2,
-      "agents": {
-        "teku": 1,
-        "prysm": 1
-      }
-    },
-    "Vietnam": {
-      "count": 10,
-      "agents": {
-        "prysm": 7,
-        "teku": 1,
-        "lighthouse": 2
-      }
-    },
-    "Denmark": {
-      "count": 34,
-      "agents": {
-        "prysm": 16,
-        "teku": 2,
-        "nimbus": 7,
-        "lodestar": 6,
-        "lighthouse": 3
-      }
-    },
-    "Hungary": {
-      "count": 12,
-      "agents": {
-        "teku": 5,
-        "prysm": 2,
-        "lighthouse": 4,
-        "lodestar": 1
-      }
-    },
-    "Taiwan": {
-      "count": 48,
-      "agents": {
-        "prysm": 32,
-        "teku": 3,
-        "nimbus": 4,
-        "lighthouse": 9
-      }
-    },
-    "Argentina": {
-      "count": 19,
-      "agents": {
-        "teku": 5,
-        "nimbus": 5,
-        "prysm": 6,
-        "lighthouse": 3
-      }
-    },
-    "Puerto Rico": {
-      "count": 4,
-      "agents": {
-        "teku": 1,
-        "prysm": 2,
-        "lighthouse": 1
-      }
-    },
-    "United Arab Emirates": {
-      "count": 5,
-      "agents": {
-        "teku": 2,
-        "prysm": 2,
-        "lighthouse": 1
-      }
-    },
-    "Slovenia": {
-      "count": 26,
-      "agents": {
-        "teku": 7,
-        "prysm": 13,
-        "lighthouse": 4,
-        "nimbus": 2
-      }
-    },
-    "Croatia": {
-      "count": 15,
-      "agents": {
-        "teku": 3,
-        "lodestar": 3,
-        "prysm": 7,
-        "nimbus": 2
-      }
-    },
-    "Serbia": {
-      "count": 10,
-      "agents": {
-        "teku": 3,
-        "prysm": 5,
-        "lighthouse": 2
-      }
-    },
-    "Estonia": {
-      "count": 13,
-      "agents": {
-        "teku": 3,
-        "prysm": 4,
-        "lighthouse": 3,
-        "lodestar": 2,
-        "nimbus": 1
-      }
-    },
-    "Mauritius": {
-      "count": 2,
-      "agents": {
-        "prysm": 1,
-        "teku": 1
-      }
-    },
-    "Gibraltar": {
-      "count": 2,
-      "agents": {
-        "teku": 2
-      }
-    },
-    "Montenegro": {
-      "count": 2,
-      "agents": {
-        "teku": 1,
-        "prysm": 1
-      }
-    },
-    "Andorra": {
-      "count": 4,
-      "agents": {
-        "teku": 2,
-        "prysm": 2
-      }
-    },
-    "Malaysia": {
-      "count": 10,
-      "agents": {
-        "teku": 3,
-        "prysm": 3,
-        "nimbus": 3,
-        "lodestar": 1
-      }
-    },
-    "Jersey": {
-      "count": 1,
-      "agents": {
-        "prysm": 1
-      }
-    },
-    "Qatar": {
-      "count": 2,
-      "agents": {
-        "lighthouse": 2
-      }
-    },
-    "Panama": {
-      "count": 3,
-      "agents": {
-        "prysm": 2,
-        "teku": 1
-      }
-    },
-    "Greece": {
-      "count": 6,
-      "agents": {
-        "prysm": 4,
-        "lighthouse": 1,
-        "teku": 1
-      }
-    },
-    "Bosnia and Herzegovina": {
-      "count": 1,
-      "agents": {
-        "prysm": 1
-      }
-    },
-    "Cyprus": {
-      "count": 8,
-      "agents": {
-        "prysm": 6,
-        "lodestar": 2
-      }
-    },
-    "Bangladesh": {
-      "count": 1,
-      "agents": {
-        "prysm": 1
-      }
-    },
-    "Jordan": {
-      "count": 7,
-      "agents": {
-        "prysm": 7
-      }
-    },
-    "Luxembourg": {
-      "count": 17,
-      "agents": {
-        "prysm": 3,
-        "teku": 5,
-        "nimbus": 8,
-        "lighthouse": 1
-      }
-    },
-    "Seychelles": {
-      "count": 3,
-      "agents": {
-        "lighthouse": 1,
-        "nimbus": 2
-      }
-    },
-    "Uzbekistan": {
-      "count": 1,
-      "agents": {
-        "lighthouse": 1
-      }
-    },
-    "Kyrgyzstan": {
-      "count": 1,
-      "agents": {
-        "prysm": 1
-      }
-    },
-    "Colombia": {
-      "count": 2,
-      "agents": {
-        "prysm": 1,
-        "teku": 1
-      }
-    },
-    "Paraguay": {
-      "count": 3,
-      "agents": {
-        "nimbus": 3
-      }
-    },
-    "Kuwait": {
-      "count": 2,
-      "agents": {
-        "nimbus": 2
-      }
-    },
-    "Ecuador": {
-      "count": 2,
-      "agents": {
-        "lighthouse": 2
-      }
-    },
-    "Belarus": {
-      "count": 1,
-      "agents": {
-        "prysm": 1
-      }
-    },
-    "Morocco": {
-      "count": 1,
-      "agents": {
-        "prysm": 1
-      }
-    },
-    "Peru": {
-      "count": 1,
-      "agents": {
-        "teku": 1
-      }
-    },
-    "Philippines": {
-      "count": 1,
-      "agents": {
-        "lighthouse": 1
-      }
-    },
-    "El Salvador": {
-      "count": 1,
-      "agents": {
-        "teku": 1
-      }
-    },
-    "Uruguay": {
-      "count": 1,
-      "agents": {
-        "lighthouse": 1
+    "Western Europe": {
+      "countries": {
+        "Germany": {
+          "summary": {
+            "count": 1934,
+            "agents": {
+              "prysm": 924,
+              "lighthouse": 483,
+              "teku": 232,
+              "nimbus": 199,
+              "lodestar": 90,
+              "grandine": 4,
+              "others": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 8.478619930262434,
+              "lighthouse": 4.432005872637181,
+              "teku": 2.1288309781611305,
+              "nimbus": 1.8260231235089006,
+              "lodestar": 0.8258396035969904,
+              "grandine": 0.036703982382088454,
+              "others": 0.018351991191044227
+            },
+            "countries": 17.74637548173977
+          }
+        },
+        "Netherlands": {
+          "summary": {
+            "count": 7,
+            "agents": {
+              "lighthouse": 2,
+              "prysm": 4,
+              "teku": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 0.018351991191044227,
+              "prysm": 0.036703982382088454,
+              "teku": 0.009175995595522114
+            },
+            "countries": 0.0642319691686548
+          }
+        },
+        "Ireland": {
+          "summary": {
+            "count": 120,
+            "agents": {
+              "prysm": 64,
+              "teku": 20,
+              "lighthouse": 35,
+              "nimbus": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.5872637181134153,
+              "teku": 0.18351991191044228,
+              "lighthouse": 0.321159845843274,
+              "nimbus": 0.009175995595522114
+            },
+            "countries": 1.1011194714626538
+          }
+        },
+        "Switzerland": {
+          "summary": {
+            "count": 205,
+            "agents": {
+              "teku": 55,
+              "prysm": 58,
+              "nimbus": 38,
+              "lighthouse": 48,
+              "lodestar": 6
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.5046797577537163,
+              "prysm": 0.5322077445402826,
+              "nimbus": 0.3486878326298403,
+              "lighthouse": 0.44044778858506145,
+              "lodestar": 0.05505597357313268
+            },
+            "countries": 1.8810790970820335
+          }
+        },
+        "United Kingdom": {
+          "summary": {
+            "count": 419,
+            "agents": {
+              "prysm": 119,
+              "teku": 73,
+              "lighthouse": 131,
+              "nimbus": 63,
+              "lodestar": 30,
+              "grandine": 3
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 1.0919434758671316,
+              "teku": 0.6698476784731143,
+              "lighthouse": 1.202055423013397,
+              "nimbus": 0.5780877225178932,
+              "lodestar": 0.27527986786566344,
+              "grandine": 0.02752798678656634
+            },
+            "countries": 3.8447421545237654
+          }
+        },
+        "France": {
+          "summary": {
+            "count": 523,
+            "agents": {
+              "prysm": 187,
+              "teku": 92,
+              "nimbus": 59,
+              "lighthouse": 127,
+              "lodestar": 44,
+              "grandine": 14
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 1.7159111763626353,
+              "teku": 0.8441915947880345,
+              "nimbus": 0.5413837401358047,
+              "lighthouse": 1.1653514406313084,
+              "lodestar": 0.403743806202973,
+              "grandine": 0.1284639383373096
+            },
+            "countries": 4.799045696458066
+          }
+        },
+        "Belgium": {
+          "summary": {
+            "count": 109,
+            "agents": {
+              "prysm": 53,
+              "teku": 15,
+              "nimbus": 14,
+              "lodestar": 10,
+              "lighthouse": 17
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.48632776656267207,
+              "teku": 0.13763993393283172,
+              "nimbus": 0.1284639383373096,
+              "lodestar": 0.09175995595522114,
+              "lighthouse": 0.15599192512387594
+            },
+            "countries": 1.0001835199119105
+          }
+        },
+        "Austria": {
+          "summary": {
+            "count": 16,
+            "agents": {
+              "teku": 5,
+              "prysm": 6,
+              "nimbus": 1,
+              "lighthouse": 4
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.04587997797761057,
+              "prysm": 0.05505597357313268,
+              "nimbus": 0.009175995595522114,
+              "lighthouse": 0.036703982382088454
+            },
+            "countries": 0.14681592952835382
+          }
+        },
+        "The Netherlands": {
+          "summary": {
+            "count": 360,
+            "agents": {
+              "teku": 78,
+              "prysm": 176,
+              "nimbus": 36,
+              "lodestar": 12,
+              "lighthouse": 58
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.7157276564507249,
+              "prysm": 1.614975224811892,
+              "nimbus": 0.33033584143879613,
+              "lodestar": 0.11011194714626536,
+              "lighthouse": 0.5322077445402826
+            },
+            "countries": 3.3033584143879615
+          }
+        },
+        "Czechia": {
+          "summary": {
+            "count": 35,
+            "agents": {
+              "teku": 5,
+              "prysm": 7,
+              "nimbus": 3,
+              "lighthouse": 20
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.04587997797761057,
+              "prysm": 0.0642319691686548,
+              "nimbus": 0.02752798678656634,
+              "lighthouse": 0.18351991191044228
+            },
+            "countries": 0.321159845843274
+          }
+        },
+        "Slovenia": {
+          "summary": {
+            "count": 21,
+            "agents": {
+              "teku": 5,
+              "prysm": 12,
+              "lighthouse": 4
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.04587997797761057,
+              "prysm": 0.11011194714626536,
+              "lighthouse": 0.036703982382088454
+            },
+            "countries": 0.1926959075059644
+          }
+        },
+        "Italy": {
+          "summary": {
+            "count": 29,
+            "agents": {
+              "prysm": 9,
+              "teku": 7,
+              "lighthouse": 6,
+              "nimbus": 5,
+              "lodestar": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.08258396035969903,
+              "teku": 0.0642319691686548,
+              "lighthouse": 0.05505597357313268,
+              "nimbus": 0.04587997797761057,
+              "lodestar": 0.018351991191044227
+            },
+            "countries": 0.2661038722701413
+          }
+        },
+        "Jersey": {
+          "summary": {
+            "count": 2,
+            "agents": {
+              "prysm": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.018351991191044227
+            },
+            "countries": 0.018351991191044227
+          }
+        },
+        "Luxembourg": {
+          "summary": {
+            "count": 18,
+            "agents": {
+              "teku": 5,
+              "nimbus": 9,
+              "prysm": 2,
+              "lighthouse": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.04587997797761057,
+              "nimbus": 0.08258396035969903,
+              "prysm": 0.018351991191044227,
+              "lighthouse": 0.018351991191044227
+            },
+            "countries": 0.16516792071939806
+          }
+        }
+      },
+      "summary": {
+        "count": 3798,
+        "countries": {
+          "Germany": 1934,
+          "Netherlands": 7,
+          "Ireland": 120,
+          "Switzerland": 205,
+          "United Kingdom": 419,
+          "France": 523,
+          "Belgium": 109,
+          "Austria": 16,
+          "The Netherlands": 360,
+          "Czechia": 35,
+          "Slovenia": 21,
+          "Italy": 29,
+          "Jersey": 2,
+          "Luxembourg": 18
+        },
+        "agents": {
+          "prysm": 1623,
+          "lighthouse": 937,
+          "teku": 593,
+          "nimbus": 428,
+          "lodestar": 194,
+          "grandine": 21,
+          "others": 2
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "North America": {
+      "countries": {
+        "United States": {
+          "summary": {
+            "count": 3414,
+            "agents": {
+              "lighthouse": 720,
+              "prysm": 1197,
+              "teku": 1023,
+              "grandine": 3,
+              "nimbus": 322,
+              "lodestar": 126,
+              "others": 23
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 6.606716828775923,
+              "prysm": 10.983666727839971,
+              "teku": 9.387043494219123,
+              "grandine": 0.02752798678656634,
+              "nimbus": 2.954670581758121,
+              "lodestar": 1.1561754450357864,
+              "others": 0.21104789869700863
+            },
+            "countries": 31.326848963112496
+          }
+        },
+        "Canada": {
+          "summary": {
+            "count": 298,
+            "agents": {
+              "prysm": 96,
+              "lighthouse": 77,
+              "teku": 54,
+              "nimbus": 44,
+              "lodestar": 22,
+              "others": 4,
+              "grandine": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.8808955771701229,
+              "lighthouse": 0.7065516608552028,
+              "teku": 0.4955037621581942,
+              "nimbus": 0.403743806202973,
+              "lodestar": 0.2018719031014865,
+              "others": 0.036703982382088454,
+              "grandine": 0.009175995595522114
+            },
+            "countries": 2.73444668746559
+          }
+        },
+        "Mexico": {
+          "summary": {
+            "count": 26,
+            "agents": {
+              "teku": 3,
+              "prysm": 15,
+              "lighthouse": 4,
+              "lodestar": 1,
+              "nimbus": 3
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.02752798678656634,
+              "prysm": 0.13763993393283172,
+              "lighthouse": 0.036703982382088454,
+              "lodestar": 0.009175995595522114,
+              "nimbus": 0.02752798678656634
+            },
+            "countries": 0.23857588548357495
+          }
+        },
+        "Puerto Rico": {
+          "summary": {
+            "count": 4,
+            "agents": {
+              "teku": 1,
+              "lighthouse": 2,
+              "prysm": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.009175995595522114,
+              "lighthouse": 0.018351991191044227,
+              "prysm": 0.009175995595522114
+            },
+            "countries": 0.036703982382088454
+          }
+        }
+      },
+      "summary": {
+        "count": 3742,
+        "countries": {
+          "United States": 3414,
+          "Canada": 298,
+          "Mexico": 26,
+          "Puerto Rico": 4
+        },
+        "agents": {
+          "lighthouse": 803,
+          "prysm": 1309,
+          "teku": 1081,
+          "grandine": 4,
+          "nimbus": 369,
+          "lodestar": 149,
+          "others": 27
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "South America": {
+      "countries": {
+        "Brazil": {
+          "summary": {
+            "count": 15,
+            "agents": {
+              "prysm": 6,
+              "teku": 2,
+              "lighthouse": 3,
+              "others": 1,
+              "nimbus": 3
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.05505597357313268,
+              "teku": 0.018351991191044227,
+              "lighthouse": 0.02752798678656634,
+              "others": 0.009175995595522114,
+              "nimbus": 0.02752798678656634
+            },
+            "countries": 0.13763993393283172
+          }
+        },
+        "Chile": {
+          "summary": {
+            "count": 3,
+            "agents": {
+              "prysm": 2,
+              "lighthouse": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.018351991191044227,
+              "lighthouse": 0.009175995595522114
+            },
+            "countries": 0.02752798678656634
+          }
+        },
+        "Argentina": {
+          "summary": {
+            "count": 18,
+            "agents": {
+              "teku": 5,
+              "nimbus": 3,
+              "lighthouse": 4,
+              "prysm": 4,
+              "lodestar": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.04587997797761057,
+              "nimbus": 0.02752798678656634,
+              "lighthouse": 0.036703982382088454,
+              "prysm": 0.036703982382088454,
+              "lodestar": 0.018351991191044227
+            },
+            "countries": 0.16516792071939806
+          }
+        },
+        "Paraguay": {
+          "summary": {
+            "count": 2,
+            "agents": {
+              "nimbus": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "nimbus": 0.018351991191044227
+            },
+            "countries": 0.018351991191044227
+          }
+        },
+        "Peru": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "teku": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        },
+        "Ecuador": {
+          "summary": {
+            "count": 2,
+            "agents": {
+              "lighthouse": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 0.018351991191044227
+            },
+            "countries": 0.018351991191044227
+          }
+        }
+      },
+      "summary": {
+        "count": 41,
+        "countries": {
+          "Brazil": 15,
+          "Chile": 3,
+          "Argentina": 18,
+          "Paraguay": 2,
+          "Peru": 1,
+          "Ecuador": 2
+        },
+        "agents": {
+          "prysm": 12,
+          "teku": 8,
+          "nimbus": 8,
+          "lighthouse": 10,
+          "others": 1,
+          "lodestar": 2
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "Southern Europe": {
+      "countries": {
+        "Romania": {
+          "summary": {
+            "count": 16,
+            "agents": {
+              "lighthouse": 3,
+              "prysm": 12,
+              "nimbus": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 0.02752798678656634,
+              "prysm": 0.11011194714626536,
+              "nimbus": 0.009175995595522114
+            },
+            "countries": 0.14681592952835382
+          }
+        },
+        "Turkey": {
+          "summary": {
+            "count": 14,
+            "agents": {
+              "teku": 1,
+              "prysm": 3,
+              "lighthouse": 7,
+              "lodestar": 2,
+              "nimbus": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.009175995595522114,
+              "prysm": 0.02752798678656634,
+              "lighthouse": 0.0642319691686548,
+              "lodestar": 0.018351991191044227,
+              "nimbus": 0.009175995595522114
+            },
+            "countries": 0.1284639383373096
+          }
+        },
+        "Spain": {
+          "summary": {
+            "count": 86,
+            "agents": {
+              "prysm": 39,
+              "teku": 15,
+              "lighthouse": 19,
+              "nimbus": 9,
+              "lodestar": 4
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.35786382822536245,
+              "teku": 0.13763993393283172,
+              "lighthouse": 0.17434391631492016,
+              "nimbus": 0.08258396035969903,
+              "lodestar": 0.036703982382088454
+            },
+            "countries": 0.7891356212149018
+          }
+        },
+        "Portugal": {
+          "summary": {
+            "count": 44,
+            "agents": {
+              "teku": 10,
+              "prysm": 10,
+              "nimbus": 4,
+              "lighthouse": 16,
+              "lodestar": 4
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.09175995595522114,
+              "prysm": 0.09175995595522114,
+              "nimbus": 0.036703982382088454,
+              "lighthouse": 0.14681592952835382,
+              "lodestar": 0.036703982382088454
+            },
+            "countries": 0.403743806202973
+          }
+        },
+        "Italy": {
+          "summary": {
+            "count": 9,
+            "agents": {
+              "lighthouse": 1,
+              "prysm": 6,
+              "teku": 1,
+              "nimbus": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 0.009175995595522114,
+              "prysm": 0.05505597357313268,
+              "teku": 0.009175995595522114,
+              "nimbus": 0.009175995595522114
+            },
+            "countries": 0.08258396035969903
+          }
+        },
+        "Bulgaria": {
+          "summary": {
+            "count": 35,
+            "agents": {
+              "teku": 4,
+              "prysm": 9,
+              "lighthouse": 13,
+              "nimbus": 4,
+              "lodestar": 5
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.036703982382088454,
+              "prysm": 0.08258396035969903,
+              "lighthouse": 0.11928794274178747,
+              "nimbus": 0.036703982382088454,
+              "lodestar": 0.04587997797761057
+            },
+            "countries": 0.321159845843274
+          }
+        },
+        "France": {
+          "summary": {
+            "count": 31,
+            "agents": {
+              "teku": 4,
+              "prysm": 21,
+              "lighthouse": 4,
+              "grandine": 1,
+              "nimbus": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.036703982382088454,
+              "prysm": 0.1926959075059644,
+              "lighthouse": 0.036703982382088454,
+              "grandine": 0.009175995595522114,
+              "nimbus": 0.009175995595522114
+            },
+            "countries": 0.2844558634611855
+          }
+        },
+        "Serbia": {
+          "summary": {
+            "count": 5,
+            "agents": {
+              "teku": 2,
+              "prysm": 3
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.018351991191044227,
+              "prysm": 0.02752798678656634
+            },
+            "countries": 0.04587997797761057
+          }
+        },
+        "Andorra": {
+          "summary": {
+            "count": 3,
+            "agents": {
+              "teku": 2,
+              "prysm": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.018351991191044227,
+              "prysm": 0.009175995595522114
+            },
+            "countries": 0.02752798678656634
+          }
+        },
+        "Greece": {
+          "summary": {
+            "count": 3,
+            "agents": {
+              "prysm": 2,
+              "teku": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.018351991191044227,
+              "teku": 0.009175995595522114
+            },
+            "countries": 0.02752798678656634
+          }
+        },
+        "Montenegro": {
+          "summary": {
+            "count": 2,
+            "agents": {
+              "prysm": 1,
+              "teku": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.009175995595522114,
+              "teku": 0.009175995595522114
+            },
+            "countries": 0.018351991191044227
+          }
+        },
+        "Bosnia and Herzegovina": {
+          "summary": {
+            "count": 2,
+            "agents": {
+              "prysm": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.018351991191044227
+            },
+            "countries": 0.018351991191044227
+          }
+        },
+        "Russia": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "lighthouse": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        },
+        "Ukraine": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "teku": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        },
+        "Croatia": {
+          "summary": {
+            "count": 2,
+            "agents": {
+              "teku": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.018351991191044227
+            },
+            "countries": 0.018351991191044227
+          }
+        }
+      },
+      "summary": {
+        "count": 254,
+        "countries": {
+          "Romania": 16,
+          "Turkey": 14,
+          "Spain": 86,
+          "Portugal": 44,
+          "Italy": 9,
+          "Bulgaria": 35,
+          "France": 31,
+          "Serbia": 5,
+          "Andorra": 3,
+          "Greece": 3,
+          "Montenegro": 2,
+          "Bosnia and Herzegovina": 2,
+          "Russia": 1,
+          "Ukraine": 1,
+          "Croatia": 2
+        },
+        "agents": {
+          "lighthouse": 64,
+          "teku": 44,
+          "prysm": 109,
+          "nimbus": 21,
+          "grandine": 1,
+          "lodestar": 15
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "Northern Europe": {
+      "countries": {
+        "Finland": {
+          "summary": {
+            "count": 795,
+            "agents": {
+              "lighthouse": 196,
+              "prysm": 309,
+              "teku": 75,
+              "nimbus": 104,
+              "lodestar": 106,
+              "others": 5
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 1.7984951367223345,
+              "prysm": 2.8353826390163333,
+              "teku": 0.6881996696641586,
+              "nimbus": 0.9543035419342998,
+              "lodestar": 0.9726555331253441,
+              "others": 0.04587997797761057
+            },
+            "countries": 7.294916498440081
+          }
+        },
+        "Lithuania": {
+          "summary": {
+            "count": 46,
+            "agents": {
+              "prysm": 24,
+              "teku": 9,
+              "nimbus": 2,
+              "lighthouse": 7,
+              "lodestar": 4
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.22022389429253073,
+              "teku": 0.08258396035969903,
+              "nimbus": 0.018351991191044227,
+              "lighthouse": 0.0642319691686548,
+              "lodestar": 0.036703982382088454
+            },
+            "countries": 0.42209579739401726
+          }
+        },
+        "Sweden": {
+          "summary": {
+            "count": 52,
+            "agents": {
+              "prysm": 18,
+              "teku": 16,
+              "nimbus": 8,
+              "lighthouse": 10
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.16516792071939806,
+              "teku": 0.14681592952835382,
+              "nimbus": 0.07340796476417691,
+              "lighthouse": 0.09175995595522114
+            },
+            "countries": 0.4771517709671499
+          }
+        },
+        "United Kingdom": {
+          "summary": {
+            "count": 17,
+            "agents": {
+              "lighthouse": 6,
+              "teku": 4,
+              "prysm": 4,
+              "nimbus": 1,
+              "lodestar": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 0.05505597357313268,
+              "teku": 0.036703982382088454,
+              "prysm": 0.036703982382088454,
+              "nimbus": 0.009175995595522114,
+              "lodestar": 0.018351991191044227
+            },
+            "countries": 0.15599192512387594
+          }
+        },
+        "Latvia": {
+          "summary": {
+            "count": 10,
+            "agents": {
+              "teku": 4,
+              "prysm": 3,
+              "lighthouse": 3
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.036703982382088454,
+              "prysm": 0.02752798678656634,
+              "lighthouse": 0.02752798678656634
+            },
+            "countries": 0.09175995595522114
+          }
+        },
+        "Norway": {
+          "summary": {
+            "count": 47,
+            "agents": {
+              "teku": 13,
+              "nimbus": 3,
+              "prysm": 12,
+              "lodestar": 3,
+              "lighthouse": 16
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.11928794274178747,
+              "nimbus": 0.02752798678656634,
+              "prysm": 0.11011194714626536,
+              "lodestar": 0.02752798678656634,
+              "lighthouse": 0.14681592952835382
+            },
+            "countries": 0.4312717929895394
+          }
+        },
+        "Denmark": {
+          "summary": {
+            "count": 29,
+            "agents": {
+              "prysm": 15,
+              "teku": 2,
+              "nimbus": 5,
+              "lighthouse": 2,
+              "lodestar": 5
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.13763993393283172,
+              "teku": 0.018351991191044227,
+              "nimbus": 0.04587997797761057,
+              "lighthouse": 0.018351991191044227,
+              "lodestar": 0.04587997797761057
+            },
+            "countries": 0.2661038722701413
+          }
+        },
+        "Estonia": {
+          "summary": {
+            "count": 11,
+            "agents": {
+              "teku": 3,
+              "prysm": 2,
+              "lighthouse": 4,
+              "lodestar": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.02752798678656634,
+              "prysm": 0.018351991191044227,
+              "lighthouse": 0.036703982382088454,
+              "lodestar": 0.018351991191044227
+            },
+            "countries": 0.10093595155074325
+          }
+        },
+        "Iceland": {
+          "summary": {
+            "count": 2,
+            "agents": {
+              "prysm": 1,
+              "lighthouse": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.009175995595522114,
+              "lighthouse": 0.009175995595522114
+            },
+            "countries": 0.018351991191044227
+          }
+        }
+      },
+      "summary": {
+        "count": 1009,
+        "countries": {
+          "Finland": 795,
+          "Lithuania": 46,
+          "Sweden": 52,
+          "United Kingdom": 17,
+          "Latvia": 10,
+          "Norway": 47,
+          "Denmark": 29,
+          "Estonia": 11,
+          "Iceland": 2
+        },
+        "agents": {
+          "lighthouse": 245,
+          "prysm": 388,
+          "teku": 126,
+          "nimbus": 123,
+          "lodestar": 122,
+          "others": 5
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "Eastern Asia": {
+      "countries": {
+        "Hong Kong": {
+          "summary": {
+            "count": 85,
+            "agents": {
+              "teku": 11,
+              "prysm": 57,
+              "nimbus": 7,
+              "lodestar": 1,
+              "lighthouse": 5,
+              "grandine": 4
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.10093595155074325,
+              "prysm": 0.5230317489447605,
+              "nimbus": 0.0642319691686548,
+              "lodestar": 0.009175995595522114,
+              "lighthouse": 0.04587997797761057,
+              "grandine": 0.036703982382088454
+            },
+            "countries": 0.7799596256193797
+          }
+        },
+        "South Korea": {
+          "summary": {
+            "count": 187,
+            "agents": {
+              "lighthouse": 53,
+              "teku": 22,
+              "prysm": 96,
+              "nimbus": 16
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 0.48632776656267207,
+              "teku": 0.2018719031014865,
+              "prysm": 0.8808955771701229,
+              "nimbus": 0.14681592952835382
+            },
+            "countries": 1.7159111763626353
+          }
+        },
+        "China": {
+          "summary": {
+            "count": 112,
+            "agents": {
+              "prysm": 72,
+              "teku": 6,
+              "nimbus": 5,
+              "lighthouse": 28,
+              "lodestar": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.6606716828775923,
+              "teku": 0.05505597357313268,
+              "nimbus": 0.04587997797761057,
+              "lighthouse": 0.2569278766746192,
+              "lodestar": 0.009175995595522114
+            },
+            "countries": 1.0277115066984768
+          }
+        },
+        "Japan": {
+          "summary": {
+            "count": 250,
+            "agents": {
+              "prysm": 125,
+              "teku": 12,
+              "lighthouse": 80,
+              "nimbus": 23,
+              "grandine": 3,
+              "lodestar": 7
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 1.1469994494402642,
+              "teku": 0.11011194714626536,
+              "lighthouse": 0.7340796476417691,
+              "nimbus": 0.21104789869700863,
+              "grandine": 0.02752798678656634,
+              "lodestar": 0.0642319691686548
+            },
+            "countries": 2.2939988988805284
+          }
+        },
+        "Vietnam": {
+          "summary": {
+            "count": 5,
+            "agents": {
+              "prysm": 4,
+              "teku": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.036703982382088454,
+              "teku": 0.009175995595522114
+            },
+            "countries": 0.04587997797761057
+          }
+        },
+        "Taiwan": {
+          "summary": {
+            "count": 45,
+            "agents": {
+              "prysm": 31,
+              "teku": 3,
+              "nimbus": 2,
+              "lighthouse": 9
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.2844558634611855,
+              "teku": 0.02752798678656634,
+              "nimbus": 0.018351991191044227,
+              "lighthouse": 0.08258396035969903
+            },
+            "countries": 0.4129198017984952
+          }
+        }
+      },
+      "summary": {
+        "count": 684,
+        "countries": {
+          "Hong Kong": 85,
+          "South Korea": 187,
+          "China": 112,
+          "Japan": 250,
+          "Vietnam": 5,
+          "Taiwan": 45
+        },
+        "agents": {
+          "teku": 55,
+          "lighthouse": 175,
+          "prysm": 385,
+          "nimbus": 53,
+          "lodestar": 9,
+          "grandine": 7
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "Southeastern Asia": {
+      "countries": {
+        "Singapore": {
+          "summary": {
+            "count": 276,
+            "agents": {
+              "prysm": 125,
+              "teku": 32,
+              "nimbus": 15,
+              "lodestar": 12,
+              "lighthouse": 86,
+              "others": 6
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 1.1469994494402642,
+              "teku": 0.29363185905670763,
+              "nimbus": 0.13763993393283172,
+              "lodestar": 0.11011194714626536,
+              "lighthouse": 0.7891356212149018,
+              "others": 0.05505597357313268
+            },
+            "countries": 2.5325747843641033
+          }
+        },
+        "Thailand": {
+          "summary": {
+            "count": 30,
+            "agents": {
+              "lighthouse": 5,
+              "teku": 6,
+              "prysm": 18,
+              "nimbus": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 0.04587997797761057,
+              "teku": 0.05505597357313268,
+              "prysm": 0.16516792071939806,
+              "nimbus": 0.009175995595522114
+            },
+            "countries": 0.27527986786566344
+          }
+        },
+        "Indonesia": {
+          "summary": {
+            "count": 11,
+            "agents": {
+              "teku": 1,
+              "prysm": 7,
+              "lighthouse": 3
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.009175995595522114,
+              "prysm": 0.0642319691686548,
+              "lighthouse": 0.02752798678656634
+            },
+            "countries": 0.10093595155074325
+          }
+        },
+        "Malaysia": {
+          "summary": {
+            "count": 9,
+            "agents": {
+              "teku": 2,
+              "lodestar": 1,
+              "lighthouse": 2,
+              "prysm": 3,
+              "nimbus": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.018351991191044227,
+              "lodestar": 0.009175995595522114,
+              "lighthouse": 0.018351991191044227,
+              "prysm": 0.02752798678656634,
+              "nimbus": 0.009175995595522114
+            },
+            "countries": 0.08258396035969903
+          }
+        },
+        "Vietnam": {
+          "summary": {
+            "count": 6,
+            "agents": {
+              "lighthouse": 4,
+              "prysm": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 0.036703982382088454,
+              "prysm": 0.018351991191044227
+            },
+            "countries": 0.05505597357313268
+          }
+        }
+      },
+      "summary": {
+        "count": 332,
+        "countries": {
+          "Singapore": 276,
+          "Thailand": 30,
+          "Indonesia": 11,
+          "Malaysia": 9,
+          "Vietnam": 6
+        },
+        "agents": {
+          "prysm": 155,
+          "teku": 41,
+          "lighthouse": 100,
+          "nimbus": 17,
+          "lodestar": 13,
+          "others": 6
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "Eastern Europe": {
+      "countries": {
+        "Moldova": {
+          "summary": {
+            "count": 145,
+            "agents": {
+              "nimbus": 142,
+              "teku": 1,
+              "lighthouse": 1,
+              "prysm": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "nimbus": 1.3029913745641402,
+              "teku": 0.009175995595522114,
+              "lighthouse": 0.009175995595522114,
+              "prysm": 0.009175995595522114
+            },
+            "countries": 1.3305193613507067
+          }
+        },
+        "Poland": {
+          "summary": {
+            "count": 97,
+            "agents": {
+              "teku": 10,
+              "nimbus": 39,
+              "prysm": 33,
+              "lighthouse": 13,
+              "lodestar": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.09175995595522114,
+              "nimbus": 0.35786382822536245,
+              "prysm": 0.30280785465222976,
+              "lighthouse": 0.11928794274178747,
+              "lodestar": 0.018351991191044227
+            },
+            "countries": 0.8900715727656451
+          }
+        },
+        "Ukraine": {
+          "summary": {
+            "count": 13,
+            "agents": {
+              "teku": 4,
+              "prysm": 1,
+              "lighthouse": 2,
+              "nimbus": 1,
+              "lodestar": 5
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.036703982382088454,
+              "prysm": 0.009175995595522114,
+              "lighthouse": 0.018351991191044227,
+              "nimbus": 0.009175995595522114,
+              "lodestar": 0.04587997797761057
+            },
+            "countries": 0.11928794274178747
+          }
+        },
+        "Romania": {
+          "summary": {
+            "count": 11,
+            "agents": {
+              "prysm": 5,
+              "teku": 1,
+              "lighthouse": 4,
+              "nimbus": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.04587997797761057,
+              "teku": 0.009175995595522114,
+              "lighthouse": 0.036703982382088454,
+              "nimbus": 0.009175995595522114
+            },
+            "countries": 0.10093595155074325
+          }
+        },
+        "Russia": {
+          "summary": {
+            "count": 5,
+            "agents": {
+              "teku": 1,
+              "prysm": 2,
+              "lighthouse": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.009175995595522114,
+              "prysm": 0.018351991191044227,
+              "lighthouse": 0.018351991191044227
+            },
+            "countries": 0.04587997797761057
+          }
+        },
+        "Hungary": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "teku": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        },
+        "Lithuania": {
+          "summary": {
+            "count": 7,
+            "agents": {
+              "teku": 2,
+              "nimbus": 2,
+              "lighthouse": 2,
+              "grandine": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.018351991191044227,
+              "nimbus": 0.018351991191044227,
+              "lighthouse": 0.018351991191044227,
+              "grandine": 0.009175995595522114
+            },
+            "countries": 0.0642319691686548
+          }
+        },
+        "Serbia": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "prysm": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        },
+        "Slovakia": {
+          "summary": {
+            "count": 2,
+            "agents": {
+              "prysm": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.018351991191044227
+            },
+            "countries": 0.018351991191044227
+          }
+        },
+        "Belarus": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "prysm": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        }
+      },
+      "summary": {
+        "count": 283,
+        "countries": {
+          "Moldova": 145,
+          "Poland": 97,
+          "Ukraine": 13,
+          "Romania": 11,
+          "Russia": 5,
+          "Hungary": 1,
+          "Lithuania": 7,
+          "Serbia": 1,
+          "Slovakia": 2,
+          "Belarus": 1
+        },
+        "agents": {
+          "nimbus": 185,
+          "teku": 20,
+          "prysm": 46,
+          "lighthouse": 24,
+          "lodestar": 7,
+          "grandine": 1
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "Southern Africa": {
+      "countries": {
+        "South Africa": {
+          "summary": {
+            "count": 38,
+            "agents": {
+              "lighthouse": 1,
+              "teku": 32,
+              "nimbus": 2,
+              "prysm": 3
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 0.009175995595522114,
+              "teku": 0.29363185905670763,
+              "nimbus": 0.018351991191044227,
+              "prysm": 0.02752798678656634
+            },
+            "countries": 0.3486878326298403
+          }
+        }
+      },
+      "summary": {
+        "count": 38,
+        "countries": {
+          "South Africa": 38
+        },
+        "agents": {
+          "lighthouse": 1,
+          "teku": 32,
+          "nimbus": 2,
+          "prysm": 3
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "Western Asia": {
+      "countries": {
+        "Turkey": {
+          "summary": {
+            "count": 2,
+            "agents": {
+              "teku": 1,
+              "prysm": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.009175995595522114,
+              "prysm": 0.009175995595522114
+            },
+            "countries": 0.018351991191044227
+          }
+        },
+        "Israel": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "teku": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        },
+        "Georgia": {
+          "summary": {
+            "count": 2,
+            "agents": {
+              "teku": 1,
+              "prysm": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.009175995595522114,
+              "prysm": 0.009175995595522114
+            },
+            "countries": 0.018351991191044227
+          }
+        },
+        "United Arab Emirates": {
+          "summary": {
+            "count": 6,
+            "agents": {
+              "teku": 2,
+              "prysm": 2,
+              "lighthouse": 1,
+              "nimbus": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.018351991191044227,
+              "prysm": 0.018351991191044227,
+              "lighthouse": 0.009175995595522114,
+              "nimbus": 0.009175995595522114
+            },
+            "countries": 0.05505597357313268
+          }
+        },
+        "Qatar": {
+          "summary": {
+            "count": 2,
+            "agents": {
+              "lighthouse": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 0.018351991191044227
+            },
+            "countries": 0.018351991191044227
+          }
+        },
+        "Jordan": {
+          "summary": {
+            "count": 7,
+            "agents": {
+              "prysm": 7
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.0642319691686548
+            },
+            "countries": 0.0642319691686548
+          }
+        },
+        "Bahrain": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "lighthouse": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        },
+        "Kuwait": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "nimbus": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "nimbus": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        }
+      },
+      "summary": {
+        "count": 22,
+        "countries": {
+          "Turkey": 2,
+          "Israel": 1,
+          "Georgia": 2,
+          "United Arab Emirates": 6,
+          "Qatar": 2,
+          "Jordan": 7,
+          "Bahrain": 1,
+          "Kuwait": 1
+        },
+        "agents": {
+          "teku": 5,
+          "prysm": 11,
+          "lighthouse": 4,
+          "nimbus": 2
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "Oceania": {
+      "countries": {
+        "Australia": {
+          "summary": {
+            "count": 211,
+            "agents": {
+              "prysm": 59,
+              "teku": 52,
+              "nimbus": 55,
+              "lodestar": 6,
+              "lighthouse": 39
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.5413837401358047,
+              "teku": 0.4771517709671499,
+              "nimbus": 0.5046797577537163,
+              "lodestar": 0.05505597357313268,
+              "lighthouse": 0.35786382822536245
+            },
+            "countries": 1.936135070655166
+          }
+        },
+        "New Zealand": {
+          "summary": {
+            "count": 39,
+            "agents": {
+              "teku": 5,
+              "prysm": 12,
+              "nimbus": 13,
+              "lighthouse": 7,
+              "lodestar": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.04587997797761057,
+              "prysm": 0.11011194714626536,
+              "nimbus": 0.11928794274178747,
+              "lighthouse": 0.0642319691686548,
+              "lodestar": 0.018351991191044227
+            },
+            "countries": 0.35786382822536245
+          }
+        }
+      },
+      "summary": {
+        "count": 250,
+        "countries": {
+          "Australia": 211,
+          "New Zealand": 39
+        },
+        "agents": {
+          "prysm": 71,
+          "teku": 57,
+          "nimbus": 68,
+          "lighthouse": 46,
+          "lodestar": 8
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "South Asia": {
+      "countries": {
+        "India": {
+          "summary": {
+            "count": 71,
+            "agents": {
+              "teku": 15,
+              "prysm": 35,
+              "lighthouse": 13,
+              "lodestar": 2,
+              "nimbus": 5,
+              "grandine": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.13763993393283172,
+              "prysm": 0.321159845843274,
+              "lighthouse": 0.11928794274178747,
+              "lodestar": 0.018351991191044227,
+              "nimbus": 0.04587997797761057,
+              "grandine": 0.009175995595522114
+            },
+            "countries": 0.6514956872820701
+          }
+        }
+      },
+      "summary": {
+        "count": 71,
+        "countries": {
+          "India": 71
+        },
+        "agents": {
+          "teku": 15,
+          "prysm": 35,
+          "lighthouse": 13,
+          "lodestar": 2,
+          "nimbus": 5,
+          "grandine": 1
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "Northern Asia": {
+      "countries": {
+        "Russia": {
+          "summary": {
+            "count": 105,
+            "agents": {
+              "teku": 11,
+              "prysm": 58,
+              "nimbus": 10,
+              "lighthouse": 24,
+              "lodestar": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.10093595155074325,
+              "prysm": 0.5322077445402826,
+              "nimbus": 0.09175995595522114,
+              "lighthouse": 0.22022389429253073,
+              "lodestar": 0.018351991191044227
+            },
+            "countries": 0.963479537529822
+          }
+        },
+        "Ukraine": {
+          "summary": {
+            "count": 14,
+            "agents": {
+              "teku": 2,
+              "prysm": 3,
+              "lighthouse": 3,
+              "nimbus": 6
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.018351991191044227,
+              "prysm": 0.02752798678656634,
+              "lighthouse": 0.02752798678656634,
+              "nimbus": 0.05505597357313268
+            },
+            "countries": 0.1284639383373096
+          }
+        },
+        "Kazakhstan": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "teku": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        }
+      },
+      "summary": {
+        "count": 120,
+        "countries": {
+          "Russia": 105,
+          "Ukraine": 14,
+          "Kazakhstan": 1
+        },
+        "agents": {
+          "teku": 14,
+          "prysm": 61,
+          "nimbus": 16,
+          "lighthouse": 27,
+          "lodestar": 2
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "Central Europe": {
+      "countries": {
+        "Austria": {
+          "summary": {
+            "count": 100,
+            "agents": {
+              "teku": 18,
+              "prysm": 31,
+              "nimbus": 28,
+              "lodestar": 7,
+              "lighthouse": 15,
+              "grandine": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.16516792071939806,
+              "prysm": 0.2844558634611855,
+              "nimbus": 0.2569278766746192,
+              "lodestar": 0.0642319691686548,
+              "lighthouse": 0.13763993393283172,
+              "grandine": 0.009175995595522114
+            },
+            "countries": 0.9175995595522114
+          }
+        },
+        "Slovakia": {
+          "summary": {
+            "count": 8,
+            "agents": {
+              "prysm": 4,
+              "teku": 2,
+              "lighthouse": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.036703982382088454,
+              "teku": 0.018351991191044227,
+              "lighthouse": 0.018351991191044227
+            },
+            "countries": 0.07340796476417691
+          }
+        },
+        "Czechia": {
+          "summary": {
+            "count": 13,
+            "agents": {
+              "teku": 1,
+              "prysm": 8,
+              "lodestar": 1,
+              "nimbus": 3
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.009175995595522114,
+              "prysm": 0.07340796476417691,
+              "lodestar": 0.009175995595522114,
+              "nimbus": 0.02752798678656634
+            },
+            "countries": 0.11928794274178747
+          }
+        },
+        "Hungary": {
+          "summary": {
+            "count": 13,
+            "agents": {
+              "teku": 3,
+              "prysm": 7,
+              "lighthouse": 1,
+              "nimbus": 1,
+              "lodestar": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.02752798678656634,
+              "prysm": 0.0642319691686548,
+              "lighthouse": 0.009175995595522114,
+              "nimbus": 0.009175995595522114,
+              "lodestar": 0.009175995595522114
+            },
+            "countries": 0.11928794274178747
+          }
+        },
+        "Croatia": {
+          "summary": {
+            "count": 10,
+            "agents": {
+              "teku": 3,
+              "lodestar": 1,
+              "prysm": 5,
+              "nimbus": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.02752798678656634,
+              "lodestar": 0.009175995595522114,
+              "prysm": 0.04587997797761057,
+              "nimbus": 0.009175995595522114
+            },
+            "countries": 0.09175995595522114
+          }
+        },
+        "Poland": {
+          "summary": {
+            "count": 22,
+            "agents": {
+              "prysm": 4,
+              "teku": 6,
+              "lighthouse": 6,
+              "grandine": 1,
+              "nimbus": 5
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.036703982382088454,
+              "teku": 0.05505597357313268,
+              "lighthouse": 0.05505597357313268,
+              "grandine": 0.009175995595522114,
+              "nimbus": 0.04587997797761057
+            },
+            "countries": 0.2018719031014865
+          }
+        },
+        "Serbia": {
+          "summary": {
+            "count": 3,
+            "agents": {
+              "teku": 1,
+              "lighthouse": 1,
+              "prysm": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.009175995595522114,
+              "lighthouse": 0.009175995595522114,
+              "prysm": 0.009175995595522114
+            },
+            "countries": 0.02752798678656634
+          }
+        },
+        "Slovenia": {
+          "summary": {
+            "count": 5,
+            "agents": {
+              "teku": 2,
+              "prysm": 2,
+              "nimbus": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.018351991191044227,
+              "prysm": 0.018351991191044227,
+              "nimbus": 0.009175995595522114
+            },
+            "countries": 0.04587997797761057
+          }
+        }
+      },
+      "summary": {
+        "count": 174,
+        "countries": {
+          "Austria": 100,
+          "Slovakia": 8,
+          "Czechia": 13,
+          "Hungary": 13,
+          "Croatia": 10,
+          "Poland": 22,
+          "Serbia": 3,
+          "Slovenia": 5
+        },
+        "agents": {
+          "teku": 36,
+          "prysm": 62,
+          "nimbus": 39,
+          "lodestar": 10,
+          "lighthouse": 25,
+          "grandine": 2
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "Northern Africa": {
+      "countries": {
+        "Israel": {
+          "summary": {
+            "count": 29,
+            "agents": {
+              "lighthouse": 10,
+              "teku": 9,
+              "prysm": 8,
+              "nimbus": 1,
+              "lodestar": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 0.09175995595522114,
+              "teku": 0.08258396035969903,
+              "prysm": 0.07340796476417691,
+              "nimbus": 0.009175995595522114,
+              "lodestar": 0.009175995595522114
+            },
+            "countries": 0.2661038722701413
+          }
+        },
+        "Malta": {
+          "summary": {
+            "count": 9,
+            "agents": {
+              "nimbus": 1,
+              "prysm": 7,
+              "teku": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "nimbus": 0.009175995595522114,
+              "prysm": 0.0642319691686548,
+              "teku": 0.009175995595522114
+            },
+            "countries": 0.08258396035969903
+          }
+        },
+        "Spain": {
+          "summary": {
+            "count": 17,
+            "agents": {
+              "prysm": 7,
+              "teku": 2,
+              "lighthouse": 3,
+              "lodestar": 5
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.0642319691686548,
+              "teku": 0.018351991191044227,
+              "lighthouse": 0.02752798678656634,
+              "lodestar": 0.04587997797761057
+            },
+            "countries": 0.15599192512387594
+          }
+        },
+        "Cyprus": {
+          "summary": {
+            "count": 6,
+            "agents": {
+              "prysm": 5,
+              "lodestar": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.04587997797761057,
+              "lodestar": 0.009175995595522114
+            },
+            "countries": 0.05505597357313268
+          }
+        },
+        "Portugal": {
+          "summary": {
+            "count": 4,
+            "agents": {
+              "lodestar": 4
+            }
+          },
+          "perc": {
+            "agents": {
+              "lodestar": 0.036703982382088454
+            },
+            "countries": 0.036703982382088454
+          }
+        },
+        "Morocco": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "prysm": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        },
+        "Gibraltar": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "teku": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        }
+      },
+      "summary": {
+        "count": 67,
+        "countries": {
+          "Israel": 29,
+          "Malta": 9,
+          "Spain": 17,
+          "Cyprus": 6,
+          "Portugal": 4,
+          "Morocco": 1,
+          "Gibraltar": 1
+        },
+        "agents": {
+          "lighthouse": 13,
+          "teku": 13,
+          "nimbus": 2,
+          "prysm": 28,
+          "lodestar": 11
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "Central America": {
+      "countries": {
+        "Panama": {
+          "summary": {
+            "count": 4,
+            "agents": {
+              "prysm": 3,
+              "teku": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.02752798678656634,
+              "teku": 0.009175995595522114
+            },
+            "countries": 0.036703982382088454
+          }
+        },
+        "El Salvador": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "teku": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "teku": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        }
+      },
+      "summary": {
+        "count": 5,
+        "countries": {
+          "Panama": 4,
+          "El Salvador": 1
+        },
+        "agents": {
+          "prysm": 3,
+          "teku": 2
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "Central Asia": {
+      "countries": {
+        "Uzbekistan": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "lighthouse": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        },
+        "Kyrgyzstan": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "prysm": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        },
+        "Kazakhstan": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "lighthouse": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "lighthouse": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        }
+      },
+      "summary": {
+        "count": 3,
+        "countries": {
+          "Uzbekistan": 1,
+          "Kyrgyzstan": 1,
+          "Kazakhstan": 1
+        },
+        "agents": {
+          "lighthouse": 2,
+          "prysm": 1
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "Others Regions": {
+      "countries": {
+        "Seychelles": {
+          "summary": {
+            "count": 2,
+            "agents": {
+              "nimbus": 2
+            }
+          },
+          "perc": {
+            "agents": {
+              "nimbus": 0.018351991191044227
+            },
+            "countries": 0.018351991191044227
+          }
+        },
+        "Mauritius": {
+          "summary": {
+            "count": 2,
+            "agents": {
+              "prysm": 1,
+              "teku": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.009175995595522114,
+              "teku": 0.009175995595522114
+            },
+            "countries": 0.018351991191044227
+          }
+        }
+      },
+      "summary": {
+        "count": 4,
+        "countries": {
+          "Seychelles": 2,
+          "Mauritius": 2
+        },
+        "agents": {
+          "nimbus": 2,
+          "prysm": 1,
+          "teku": 1
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
+      }
+    },
+    "South Island, New Zealand": {
+      "countries": {
+        "New Zealand": {
+          "summary": {
+            "count": 1,
+            "agents": {
+              "prysm": 1
+            }
+          },
+          "perc": {
+            "agents": {
+              "prysm": 0.009175995595522114
+            },
+            "countries": 0.009175995595522114
+          }
+        }
+      },
+      "summary": {
+        "count": 1,
+        "countries": {
+          "New Zealand": 1
+        },
+        "agents": {
+          "prysm": 1
+        }
+      },
+      "perc": {
+        "countries": {},
+        "agents": {}
       }
     }
   }
