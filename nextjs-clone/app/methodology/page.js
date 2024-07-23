@@ -7,7 +7,7 @@ export default function Methodology() {
   return (
     <>
       <Head>
-        <title>Data Methodology | Client Diversity | Ethereum</title>
+        <title>Data Methodology | Geographic Diversity | Ethereum</title>
       </Head>
       <div className="container opacity-90">
         <div className="w-full sm:w-[65%] flex-col mx-auto py-[4rem]">

@@ -1,8 +1,8 @@
 # Read about configuration here: https://jekyllrb.com/docs/configuration/options/
-title: Client Diversity | Ethereum
-description: Improve Ethereum's resilience and protect the network by using a minority client.
+title: Geographic Diversity | Ethereum Costa Rica
+description: Improve Ethereum's resilience and protect the network by validating in a minority region.
 keywords: ethereum, client, diversity, eth, beacon, chain
-url: https://clientdiversity.org
+url: https://geographicdiversity.org
 permalink: pretty # Do not change this, it will break all links
 timezone: America/New_York
 markdown: kramdown
@@ -50,5 +50,5 @@ toast_expiration: 1701302399 # epoch time in seconds
 nav_enabled: true
 
 # Links
-github_repo: https://github.com/etheralpha/clientdiversity-org
+github_repo: https://github.com/Ethereum-Costa-Rica/geographicdiversity-org
 

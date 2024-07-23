@@ -15,7 +15,7 @@ const data = {
   ],
 };
 
-const ClientDiversity = () => {
+const GeographicDiversity = () => {
   const resolvedTheme = useCustomTheme();
   const bgColor = resolvedTheme === "light" ? "#ffffff" : "#121212";
   const textColor = resolvedTheme === "light" ? "#000000" : "#ffffff";
@@ -38,10 +38,10 @@ const ClientDiversity = () => {
       id="diversity"
     >
       <h1 className="text-[32px] md:text-[40px] leading-[35px] font-[800] opacity-90 text-center">
-        Client Diversity Is <span className="underline">Not</span> Optional
+        Geographic Diversity Is <span className="underline">Not</span> Optional
       </h1>
       <p className="font-[400] text-[15px]">
-        Many know client diversity is important for a more resilient network,
+        Many know geographic diversity is important for a more resilient network,
         but they don&apos;t understand why or just how essential it is.
         It&apos;s not only important —{" "}
         <span className="font-[700]">it&apos;s critical.</span> In the event of a geopolitical crisis
@@ -99,4 +99,4 @@ const ClientDiversity = () => {
   );
 };
 
-export default ClientDiversity;
+export default GeographicDiversity;
