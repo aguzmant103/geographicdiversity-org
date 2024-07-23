@@ -93,7 +93,7 @@ const Resources = () => {
                 className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
               ></div>
               <li className="text-blue-600 underline">
-                Staking Pool Client Diversity
+                Staking Pool Geographic Diversity
               </li>
             </Link>
             <Link
