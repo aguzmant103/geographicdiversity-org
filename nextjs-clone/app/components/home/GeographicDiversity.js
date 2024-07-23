@@ -44,52 +44,52 @@ const GeographicDiversity = () => {
         Many know geographic diversity is important for a more resilient network,
         but they don&apos;t understand why or just how essential it is.
         It&apos;s not only important —{" "}
-        <span className="font-[700]">it&apos;s critical.</span> If a single
-        client is used by 2/3rds (66%) of validators, there&apos;s a very real
-        risk this can result in disrupting the chain and monetary loss [
+        <span className="font-[700]">it&apos;s critical.</span> In the event of a geopolitical crisis
+          or natural disaster, nodes concentrated in a specific region face a heightened risk 
+          of compromise, potentially jeopardizing the security and availability of the network's data. [
         <Link
-          href="https://www.slashed.info/"
+          href="https://medium.com/archethic/from-china-to-antarctica-the-importance-of-geographical-diversity-in-blockchain-node-distribution-a6d4a366155b"
           target="_blank"
           className="text-blue-600 underline"
         >
           1
         </Link>
-        ,{" "}
+        ].
+      </p>
+
+      <p className="font-[400] text-[15px]">
+      The Ethereum network is designed to operate continuously, every hour of every day, throughout 
+      the year. Blockchain networks can maintain exceptionally high uptime levels due to their 
+      decentralized nature. Any move towards greater centralization in significant aspects heightens 
+      the risk of network disruptions and potential devaluation of ETH. [
         <Link
-          href="https://nitter.net/_crypto_crack/status/1504459918539120643"
+          href="https://www.hivemind.capital/content/the-importance-of-ethereum-staking-diversity"
           target="_blank"
           className="text-blue-600 underline"
         >
           2
         </Link>
-        ] for node operators.
+        ].
       </p>
 
       <p className="font-[400] text-[15px]">
-        It takes 2/3rds of validators to reach finality. If a client with 66%+
-        of marketshare has a bug and forks to its own chain, it&lsquo;ll be
-        capable of finalizing. Once the fork finalizes, the{" "}
-        <span className="font-[700]">
-          validators cannot return to the real chain without being slashed.
-        </span>{" "}
-        If 66% of the chain gets slashed simultaneously, the penalty is the
-        whole 32 ETH.
+        ~35% of 
+        <Link
+          href="https://ethernodes.org/countries"
+          target="_blank"
+          className="underline"
+        >
+          all Ethereum nodes
+        </Link>
+        are operated in the United States. Another 14% of Ethereum nodes operate in Germany. 
+        <span className="font-[700]">Having this kind of geographic concentration 
+          poses significant risks.</span>
       </p>
 
       <p className="font-[400] text-[15px]">
-        So why is {">"}50% marketshare still dangerous? If a minority client
-        forks, the 50%+ majority client can obtain a 66%+ majority. With no
-        client having a marketshare over 33%, these scenarios are avoided.
-        That&lsquo;s why{" "}
-        <span className="font-[700]">
-          {"<"}33% marketshare is the goal for all clients.
-        </span>
-      </p>
-
-      <p className="font-[400] text-[15px]">
-        <span className="font-[700]">Execution clients are not immune.</span>{" "}
-        The risks mentioned above apply to both consensus clients and execution
-        clients equally.
+        While it may seem unlikely for those regions to go offline, these scenarios highlight 
+        the trade-offs that blockchain network developers must carefully evaluate 
+        when scaling their networks.
       </p>
 
       <div className="w-full md:w-[60%] mx-auto border-[1px] border-gray-200 px-[10px]">
