@@ -4,16 +4,16 @@
 	{%- assign round = include.round -%}
 {%- endif -%}
 
-{%- for client in data -%}
-	{%- assign name = client.name | capitalize -%}
-	{%- assign value = client.value | times: 100 | round: 2 -%}
+{% for region_data in data %}
+	{% assign sum_countries = 0 %}
+  {% for country_data in region_data[1].countries %}
+    {% assign sum_countries = sum_countries | plus: country_data[1].perc.countries %}
+  {% endfor %}
+	{%- assign name = region_data[0] | capitalize -%}
+	{%- assign value = sum_countries | round: 2 -%}
 	{%- if round -%}
-		{%- assign value = client.value | times: 100 | round: 0 -%}
+		{%- assign value = sum_countries | round: 0 -%}
 	{%- endif -%}
-	{%- assign accuracy = "no data" -%}
-	{%- if client.accuracy != "no data" -%}
-		{%- assign accuracy = client.accuracy | times: 100 | round: 1 | append: "%" -%}
-  {%- endif -%}
 
 
   {%- assign color = "success" -%}
@@ -39,11 +39,8 @@
 	          <div class="d-flex justify-content-between">
 	            <span class="me-2">caution:</span><span>33-50%</span>
 	          </div>
-	          <div class="d-flex justify-content-between mb-1 pb-1 border-bottom border-secondary">
-	          <span class="me-2">danger:</span><span>50-100%</span>
-	          </div>
-	          <div class="d-flex justify-content-between">
-	            <span class="me-2">accuracy:</span><span>{{accuracy}}</span>
+	          <div class="d-flex justify-content-between mb-1 pb-1 border-secondary">
+	          	<span class="me-2">danger:</span><span>50-100%</span>
 	          </div>
 	        </div>'>
       <div class="progress-bar position-absolute bg-{{color}}" role="progressbar" style="width: {{value}}%; height: 1.25rem;" aria-valuenow="{{value}}" aria-valuemin="0" aria-valuemax="100"></div>

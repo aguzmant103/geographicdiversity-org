@@ -10,157 +10,18 @@
       <div class="col-12 col-xl-5 col-lg-6 col-md-8 col-sm-12 text-center">
         <div class="card h-100 rounded-3 p-0 p-lg-2">
           <div class="card-body d-flex flex-column p-4">
-            <h3 class="p-2 mb-4">Consensus Clients</h3>
-            <!-- Consensus Client Alerts -->
-              {%- assign blockprint = site.data.blockprint | last -%}
-              {%- include partials/components/alert.html data=blockprint.data.other type="consensus" -%}
-              {%- assign migalabs = site.data.migalabs | last -%}
-              {%- include partials/components/alert.html data=migalabs.data.other type="consensus" -%}
-              {%- assign rated = site.data.rated | last -%}
-              {%- include partials/components/alert.html data=rated.data.other type="consensus" -%}
-            <!-- Blockprint Data -->
+            <h3 class="p-2 mb-4">Geographic Staking</h3>
+            <!-- Nodewatch Data -->
             {%- assign visibility = "d-none" -%}
-            {%- if site.default_consensus_source == "blockprint" -%}
+            {%- if site.default_source == "nodewatch" -%}
               {%- assign visibility = "" -%}
             {%- endif -%}
-            <div class="{{visibility}} text-start flex-grow-1 blockprint consensus-data">
-              {%- assign blockprint = site.data.blockprint | last -%}
-              {%- include partials/components/progress-bar.html data=blockprint.data.distribution -%}
+            <div class="{{visibility}} text-start flex-grow-1 nodewatch">
+
+              {%- include partials/components/progress-bar.html data=site.data.nodewatch.raw -%}
               <div class="text-center small">
-                Data provided by <a href="https://blockprint.sigp.io/" target="_blank">Sigma Prime's Blockprint</a> — updated daily. <br>
+                Data provided by <a href="https://nodewatch.io/" target="_blank">Nodewatch</a> — updated daily. <br>
                 Data may not be 100% accurate. (<a href="/methodology">Read more</a>)
-              </div>
-            </div>
-            <!-- Miga Labs Data -->
-            {%- assign visibility = "d-none" -%}
-            {%- if site.default_consensus_source == "migalabs" -%}
-              {%- assign visibility = "" -%}
-            {%- endif -%}
-            <div class="{{visibility}} text-start flex-grow-1 migalabs consensus-data">
-              {%- assign migalabs = site.data.migalabs | last -%}
-              {%- include partials/components/progress-bar.html data=migalabs.data.distribution -%}
-              <div class="text-center small">
-                Data provided by <a href="https://migalabs.io" target="_blank">Miga Labs</a> — updated daily. <br>
-                Data may not be 100% accurate. (<a href="/methodology">Read more</a>)
-              </div>
-            </div>
-            <!-- Rated Data -->
-            {%- assign visibility = "d-none" -%}
-            {%- if site.default_consensus_source == "rated" -%}
-              {%- assign visibility = "" -%}
-            {%- endif -%}
-            <div class="{{visibility}} text-start flex-grow-1 rated consensus-data">
-              {%- assign rated = site.data.rated | last -%}
-              {%- include partials/components/progress-bar.html data=rated.data.distribution -%}
-              <div class="text-center small">
-                Data provided by <a href="https://rated.network" target="_blank">Rated.Network</a> — updated daily. <br>
-                Data may not be 100% accurate. (<a href="/methodology">Read more</a>)
-              </div>
-            </div>
-            <!-- Select Data Source -->
-            <div id="dataSourceOptionsCC" class="mt-4 text-start text-sm-center">
-              <div class="alert alert-info" role="alert">
-                <div class="me-2 fw-bold">
-                  <span>Data source </span>
-                  <a href="/methodology" style="color: #055160;">(read more)</a>:
-                </div>
-                {%- assign checked = "" -%}
-                {%- if site.default_consensus_source == "blockprint" -%}
-                  {%- assign checked = "checked" -%}
-                {%- endif -%}
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="datasourcesCC" id="dataSource1" value="blockprint"  onclick="setDataSource('blockprint', 'consensus');" {{checked}}>
-                  <label class="form-check-label" for="dataSource1">Sigma Prime's Blockprint</label>
-                </div>
-                {%- assign checked = "" -%}
-                {%- if site.default_consensus_source == "migalabs" -%}
-                  {%- assign checked = "checked" -%}
-                {%- endif -%}
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="datasourcesCC" id="dataSource2" value="migalabs"  onclick="setDataSource('migalabs', 'consensus');" {{checked}}>
-                  <label class="form-check-label" for="dataSource2">Miga Labs</label>
-                </div>
-                {%- assign checked = "" -%}
-                {%- if site.default_consensus_source == "rated" -%}
-                  {%- assign checked = "checked" -%}
-                {%- endif -%}
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="datasourcesCC" id="dataSource3" value="rated"  onclick="setDataSource('rated', 'consensus');" {{checked}}>
-                  <label class="form-check-label" for="dataSource3">Rated.Network</label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-xl-5 col-lg-6 col-md-8 col-sm-12 mt-5 pt-3 mt-lg-0 pt-lg-0 text-center d-flex flex-column">
-        <div class="card h-100 rounded-3 p-0 p-lg-2">
-          <div class="card-body d-flex flex-column p-4">
-            <h3 class="p-2 mb-4">Execution Clients</h3>
-            <!-- Execution Client Alerts -->
-              <div class="d-none">
-                {%- assign ethernodes = site.data.ethernodes | last -%}
-                {%- include partials/components/alert.html data=ethernodes.data.other type="execution" -%}
-              </div>
-              {%- assign supermajority = site.data.supermajority | last -%}
-              {%- include partials/components/alert.html data=supermajority.data.other type="execution" -%}
-            <!-- Ethernodes Data -->
-            {%- assign visibility = "d-none" -%}
-            {%- if site.default_execution_source == "ethernodes" -%}
-              {%- assign visibility = "" -%}
-            {%- endif -%}
-            <div class="{{visibility}} text-start flex-grow-1 ethernodes execution-data">
-              <div class="">
-                <p>The <a href="https://ethernodes.org" target="_blank">Ethernodes</a> data has been removed.</p>
-                <p>The data is a representation of what clients are showing free peers and it's not well understood how this correlates to an overall picture of what clients are currently in use. For now, survey data (from <a href="https://execution-diversity.info" target="_blank">execution-diversity.info</a>) is considered the most reliable source of information for the state of execution client diversity.</p>
-                <p><a class="new-tab" href="https://paragraph.xyz/@ethstaker/new-clientdiversity-data" target="_blank">Read more {{site.data.icons.arrow_right}}</a></p>
-              </div>
-              <div class="d-none">
-                {%- assign ethernodes = site.data.ethernodes | last -%}
-                {%- include partials/components/progress-bar.html data=ethernodes.data.distribution -%}
-              </div>
-              <div class="d-none text-center small">
-                Data provided by <a href="https://ethernodes.org" target="_blank">Ethernodes</a> — updated daily. <br>
-                Data may not be 100% accurate. (<a href="/methodology">Read more</a>)
-              </div>
-            </div>
-            <!-- Execution-Diversity.info Data -->
-            {%- assign visibility = "d-none" -%}
-            {%- if site.default_execution_source == "supermajority" -%}
-              {%- assign visibility = "" -%}
-            {%- endif -%}
-            <div class="{{visibility}} text-start flex-grow-1 supermajority execution-data">
-              {%- assign supermajority = site.data.supermajority | last -%}
-              {%- include partials/components/progress-bar.html data=supermajority.data.distribution round=true -%}
-              <div class="text-center small">
-                Data provided by <a href="http://supermajority.info/" target="_blank">supermajority.info</a> — updated manually. <br>
-                Data may not be 100% accurate. (<a href="/methodology">Read more</a>) <br>
-                <p class="mt-2 mb-0 fw-bold">Network coverage: {{supermajority.data.other.validators_percentage | times: 100 | round: 1 }}%</p>
-              </div>
-            </div>
-            <!-- Select Data Source -->
-            <div id="dataSourceOptionsEC" class="mt-4 text-start text-sm-center">
-              <div class="alert alert-info" role="alert">
-                <div class="me-2 fw-bold">
-                  <span>Data source </span>
-                  <a href="/methodology" style="color: #055160;">(read more)</a>:
-                </div>
-                {%- assign checked = "" -%}
-                {%- if site.default_execution_source == "supermajority" -%}
-                  {%- assign checked = "checked" -%}
-                {%- endif -%}
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="datasourcesEC" id="dataSourceEC2" value="supermajority"  onclick="setDataSource('supermajority', 'execution');" {{checked}}>
-                  <label class="form-check-label" for="dataSourceEC2">Supermajority.info</label>
-                </div>
-                {%- assign checked = "" -%}
-                {%- if site.default_execution_source == "ethernodes" -%}
-                  {%- assign checked = "checked" -%}
-                {%- endif -%}
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="datasourcesEC" id="dataSourceEC1" value="ethernodes"  onclick="setDataSource('ethernodes', 'execution');" {{checked}}>
-                  <label class="form-check-label" for="dataSourceEC1">Ethernodes</label>
-                </div>
               </div>
             </div>
           </div>
