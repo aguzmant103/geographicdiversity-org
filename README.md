@@ -25,3 +25,14 @@ Resources:
 - Client resources: `_data/clients-consensus.yml` and `_data/clients-execution.yml`
 - Client guides: `_data/consensus-migration-guides.yml` and `_data/execution-migration-guides.yml`
 - Rest of the content is within `index.md` as raw html
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
