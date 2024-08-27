@@ -35,6 +35,7 @@ Resources:
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/lindsaymoralesb"><img src="https://avatars.githubusercontent.com/u/87027508?v=4?s=100" width="100px;" alt="Lindsay Morales"/><br /><sub><b>Lindsay Morales</b></sub></a><br /><a href="#code-lindsaymoralesb" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/jsanchez556"><img src="https://avatars.githubusercontent.com/u/22351148?v=4?s=100" width="100px;" alt="blockchainer_cr"/><br /><sub><b>blockchainer_cr</b></sub></a><br /><a href="#code-jsanchez556" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/ChrisFernandezVivas"><img src="https://avatars.githubusercontent.com/u/108043947?v=4?s=100" width="100px;" alt="ChrisFernandezVivas"/><br /><sub><b>ChrisFernandezVivas</b></sub></a><br /><a href="#code-ChrisFernandezVivas" title="Code">💻</a></td>
     </tr>
   </tbody>
