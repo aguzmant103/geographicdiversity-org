@@ -31,6 +31,13 @@ Resources:
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/jsanchez556"><img src="https://avatars.githubusercontent.com/u/22351148?v=4?s=100" width="100px;" alt="blockchainer_cr"/><br /><sub><b>blockchainer_cr</b></sub></a><br /><a href="#code-jsanchez556" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
