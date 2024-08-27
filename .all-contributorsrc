@@ -1,4 +1,21 @@
 {
   "projectName": "geographicdiversity-org",
-  "projectOwner": "Ethereum-Costa-Rica"
+  "projectOwner": "Ethereum-Costa-Rica",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "lindsaymoralesb",
+      "name": "Lindsay Morales",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87027508?v=4",
+      "profile": "https://github.com/lindsaymoralesb",
+      "contributions": [
+        "code"
+      ]
+    }
+  ]
 }
