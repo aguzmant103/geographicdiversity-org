@@ -1,4 +1,48 @@
 {
   "projectName": "geographicdiversity-org",
-  "projectOwner": "Ethereum-Costa-Rica"
+  "projectOwner": "Ethereum-Costa-Rica",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "lindsaymoralesb",
+      "name": "Lindsay Morales",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87027508?v=4",
+      "profile": "https://github.com/lindsaymoralesb",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "jsanchez556",
+      "name": "blockchainer_cr",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22351148?v=4",
+      "profile": "https://github.com/jsanchez556",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ChrisFernandezVivas",
+      "name": "ChrisFernandezVivas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/108043947?v=4",
+      "profile": "https://github.com/ChrisFernandezVivas",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "aguzmant103",
+      "name": "aguzmant103",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67167307?v=4",
+      "profile": "https://github.com/aguzmant103",
+      "contributions": [
+        "projectManagement"
+      ]
+    }
+  ]
 }
