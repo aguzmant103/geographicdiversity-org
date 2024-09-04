@@ -2,28 +2,25 @@
 layout: markdown
 title: Data Methodology
 permalink: /methodology/
-# redirect from the old path
-redirect_from: /client-fingerprinting/
-
 header: Data Methodology
 subheader: 
 ---
 
+Our data methodology is designed to provide accurate and insightful analysis of client distribution and geographic information. We source our data from [Nodewatch.io](https://nodewatch.io/), a platform specializing in detailed network metrics. Here’s an overview of our approach:
 
-There's no inherent way to know exactly what client a validator is running. Researchers use other metrics to make deductions on which client a validator is most likely operating. The problem is they cannot distinguish with 100% certainty which client a validator is running.
+## Data Collection
+We gather data from Nodewatch.io, which offers comprehensive details about client types, countries, and geographic coordinates (latitude and longitude).
 
+## Data Processing
+The raw data is processed through several steps to generate valuable insights:
 
-## Consensus Client Data
+#### Geographic Categorization:
+Each entry in the dataset is categorized by continent based on its latitude and longitude. This classification helps us organize the data regionally for more targeted analysis.
 
-[Blockprint](https://blockprint.sigp.io/) - Developed by Sigma Prime's Michael Sproul, Blockprint  analyzes each client's block proposal style as described in [this Twitter thread](https://twitter.com/sproulM_/status/1440512518242197516) ([Nitter](https://nitter.snopyta.org/sproulM_/status/1440512518242197516)).
+#### Data Aggregation:
+We aggregate the data to provide a summary of clients and their distribution across continents and countries. This involves calculating counts and percentages to reflect the prevalence of different clients and their geographical spread.
 
-[Miga Labs](https://migalabs.io/) - A crawler is used to count beacon nodes and their self-reported identity. However, this means that validators sharing a node are counted only once and nodes with fewer validators have a greater influence on the estimate.
+#### Summary and Output:
+The processed data is compiled into a structured summary that includes total counts, percentage distributions, and detailed breakdowns by continent and country.
 
-[Rated](https://www.rated.network/) - Methodology unknown.
-
-
-## Execution Client Data
-
-[Ethernodes](https://ethernodes.org/) - Methodology unknown.
-
-[supermajority.info](https://supermajority.info) - Through social effort, supermajority.info (lead by Sonic) gathers **self-reported** client breakdown data and weighted against how many validators each entity has. While this doesn't capture data on the entire network, the marketshare from the entities involved is substantial enough to be considered representative.
+By following this methodology, we ensure that our data is collected, stored, and processed effectively to deliver accurate and actionable insights into client distribution and geographic patterns.
