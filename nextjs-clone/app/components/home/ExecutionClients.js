@@ -133,7 +133,7 @@ const ExecutionClients = () => {
               type="radio"
               name="progressbar"
               id="info"
-              checked={activeRadio === true}
+              defaultChecked={activeRadio === true}
             />
             <label htmlFor="info" className="text-[15px] font-[500]">
               Supermajority.info
@@ -147,7 +147,7 @@ const ExecutionClients = () => {
               type="radio"
               name="progressbar"
               id="ethernodes"
-              checked={activeRadio === false}
+              defaultChecked={activeRadio === false}
             />
             <label htmlFor="ethernodes" className="text-[15px] font-[500]">
               Ethernodes

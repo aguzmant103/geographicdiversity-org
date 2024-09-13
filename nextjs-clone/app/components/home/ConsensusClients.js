@@ -134,7 +134,7 @@ const ConsensusClients = () => {
               name="progress"
               id="sigma"
               value="sigma"
-              defaultchecked={activeRadio === "sigma"}
+              defaultChecked={activeRadio === "sigma"}
             />
             <label htmlFor="sigma" className="text-[15px] font-[500]">
               Sigma Prime&apos;s Blockprint
@@ -149,7 +149,7 @@ const ConsensusClients = () => {
               name="progress"
               id="miga"
               value="miga"
-              defaultchecked={activeRadio === "miga"}
+              defaultChecked={activeRadio === "miga"}
             />
             <label htmlFor="miga" className="text-[15px] font-[500]">
               Miga Labs
@@ -164,7 +164,7 @@ const ConsensusClients = () => {
               name="progress"
               id="rated"
               value="rated"
-              checked={activeRadio === "rated"}
+              defaultChecked={activeRadio === "rated"}
             />
             <label htmlFor="rated" className="text-[15px] font-[500]">
               Rated.Network
