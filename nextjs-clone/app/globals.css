@@ -37,3 +37,12 @@ body {
 .row-title {
   font-size: 15px !important;
 }
+
+.client-logos {
+  height: 8rem;
+}
+@media (max-width: 25em) {
+  .client-logos {
+    height: 5rem;
+  }
+}
