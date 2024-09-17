@@ -73,16 +73,16 @@ const GeographicDiversity = () => {
       </p>
 
       <p className="font-[400] text-[15px]">
-        ~35% of 
+        ~35% of
         <Link
           href="https://ethernodes.org/countries"
           target="_blank"
           className="underline"
         >
-          all Ethereum nodes
+          {' '}all Ethereum nodes{' '}
         </Link>
         are operated in the United States. Another 14% of Ethereum nodes operate in Germany. 
-        <span className="font-[700]">Having this kind of geographic concentration 
+        <span className="font-[700]">{' '}Having this kind of geographic concentration 
           poses significant risks.</span>
       </p>
 
