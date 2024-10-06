@@ -37,8 +37,8 @@ Currently, approximately 35% of Ethereum nodes are in the United States, and 14%
 2. Install dependencies: `npm install`
 3. Create a feature branch off of the latest version branch
 4. Start the local server: `npm run start`
-5. Go to <http://localhost:3000/api/getnodewatchdata> to view nodewatch data
-6. Add `?fetch=true` in order to refresh the data: <http://localhost:3000/api/getnodewatchdata?fetch=true>
+5. Go to <http://localhost:3001/api/getnodewatchdata> to view nodewatch data
+6. Add `?fetch=true` in order to refresh the data: <http://localhost:3001/api/getnodewatchdata?fetch=true>
 
 To build the site use `npm run build`.
 

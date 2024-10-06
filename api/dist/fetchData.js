@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.run = run;
 const axios_1 = __importDefault(require("axios"));
 const fs_1 = __importDefault(require("fs"));
-const FOLDER_PATH = '../_data/';
+const FOLDER_PATH = '../nextjs-clone/app/data/';
 // Function to fetch data
 function fetchData(endpoint, query) {
     return __awaiter(this, void 0, void 0, function* () {
@@ -88,6 +88,20 @@ function assign_continent(latitud, longitud) {
     }
     return "Others Regions";
 }
+// Transform data to expected format
+function transformData(rawData) {
+    const transformedData = {
+        data: Object.entries(rawData.raw).map(([name, regionData]) => ({
+            name,
+            data: {
+                countries: regionData.countries,
+                summary: regionData.summary,
+                perc: regionData.perc
+            }
+        }))
+    };
+    return transformedData;
+}
 function process_nodewatch_marketshare_data(data) {
     const count = data.length;
     const processedData = data.reduce((acc, curr) => {
@@ -119,7 +133,7 @@ function process_nodewatch_marketshare_data(data) {
     }, {
         raw: {}
     });
-    saveToFile(processedData, 'nodewatch.json');
+    return processedData;
 }
 function nodewatch_marketshare() {
     return __awaiter(this, void 0, void 0, function* () {
@@ -129,7 +143,9 @@ function nodewatch_marketshare() {
         const heatMap = data.data.getHeatmapData;
         //assign continent
         saveToFile(heatMap, 'raw/nodewatch_raw.json');
-        process_nodewatch_marketshare_data(heatMap);
+        const processedData = process_nodewatch_marketshare_data(heatMap);
+        const transformedData = transformData(processedData);
+        saveToFile(transformedData, 'nodewatch.json');
     });
 }
 function run() {

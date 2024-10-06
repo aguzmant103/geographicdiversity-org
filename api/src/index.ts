@@ -3,14 +3,14 @@ import fs from 'fs';
 import { run } from './fetchData';
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 app.get('/api/getnodewatchdata', async (req, res) => {
     const { fetch } = req.query;
 
     if (fetch) await run();
 
-    fs.readFile('../_data/nodewatch.json', 'utf8', (err, data) => {
+    fs.readFile('../nextjs-clone/app/data/nodewatch.json', 'utf8', (err, data) => {
         if (err) {
             console.error('Error reading file:', err);
             res.status(500).json({ error: 'Failed to read data file' });
