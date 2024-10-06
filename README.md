@@ -47,11 +47,6 @@ To build the site use `npm run build`.
 - [NextJS](https://nextjs.org/docs)
 - [nodewatch.io](https://api.nodewatch.io)
 
-## Updating Content
-
-- Data: `_data/nodewatch.json`
-- Rest of the content is within `index.md` as raw html
-
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
