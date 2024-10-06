@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import ConsensusClients from "./ConsensusClients";
-import ExecutionClients from "./ExecutionClients";
+import GeographicDiversityStats from "./GeographicDiversityStats";
 import { useCustomTheme } from "./GetTheme";
 
 const GeographicDistribution = () => {
@@ -36,8 +35,7 @@ const GeographicDistribution = () => {
       </div>
 
       <div className="flex w-full flex-col lg:flex-row items-center lg:items-stretch justify-evenly gap-[2rem] mt-[3rem]">
-        <ConsensusClients />
-        <ExecutionClients />
+        <GeographicDiversityStats />
       </div>
     </div>
   );

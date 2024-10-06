@@ -46,3 +46,7 @@ body {
     height: 5rem;
   }
 }
+
+.white-icon {
+  filter: invert(1);
+}

@@ -25,7 +25,13 @@ const LogoSection = () => {
           {
             continents.map((image, index) => (
               <div key={index} className="w-1/3 md:w-1/3 lg:w-1/4 px-2 mb-4 flex justify-center">
-                <Image src={image.src} alt={image.alt} width={100} height={100} className="my-1 client-logos"/>
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={100}
+                  height={100}
+                  className={`my-1 client-logos ${resolvedTheme === "dark" ? 'white-icon' : ''}`}
+                />
               </div>
             ))
           }

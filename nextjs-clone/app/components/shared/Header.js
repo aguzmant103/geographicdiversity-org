@@ -8,7 +8,7 @@ import { useCustomTheme } from "../home/GetTheme";
 
 const Header = () => {
   const [click, setClick] = useState(false);
-  const { resolvedTheme } = useCustomTheme();
+  const { resolvedTheme = 'light' } = useCustomTheme() || {};
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
