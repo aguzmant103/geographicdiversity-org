@@ -49,7 +49,7 @@ const Header = () => {
           </Link>
         </ul>
       </nav>
-      <div className="absolute top-[1rem] right-[1rem] md:right-0 cursor-pointer z-20">
+      <div className="absolute top-[1rem] right-[1rem] md:right-5 cursor-pointer z-20">
         <ThemeSwitch />
       </div>
     </div>

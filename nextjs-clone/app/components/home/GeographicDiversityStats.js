@@ -46,11 +46,22 @@ const GeographicDiversityStats = () => {
   const [activeRadio, setActiveRadio] = useState("nodewatch");
   const [currentData, setCurrentData] = useState(nodewatchData);
 
+  const resolvedTheme = useCustomTheme();
+
+  const [mounted, setMounted] = useState(false);
+
   useEffect(() => {
-    console.log(nodewatchData);
+    setMounted(true);
   }, []);
 
-  const resolvedTheme = useCustomTheme();
+  const containerBaseClass = "opacity-80 border-[1px] border-cyan-500 rounded-[8px] flex flex-col items-center py-[10px] px-[20px]";
+
+  // Only apply theme-specific styles after mounting
+  const containerThemeClass = mounted
+    ? resolvedTheme === "light"
+      ? "bg-[#b6e7f1] text-black"
+      : "bg-[#032830] text-cyan-300"
+    : "bg-[#b6e7f1] text-black";
 
   useEffect(() => {
     handleToggle(activeRadio);
@@ -66,6 +77,7 @@ const GeographicDiversityStats = () => {
         break;
     }
   };
+
   return (
     <div className="border-[1px] border-gray-300 rounded-[8px] w-full max-w-[450px] p-[2rem]">
       <RegionPercentages jsonData={currentData} />
@@ -94,13 +106,7 @@ const GeographicDiversityStats = () => {
         </p>
       </div>
 
-      <div
-        className={`opacity-80 border-[1px] border-cyan-500 rounded-[8px] flex flex-col items-center py-[10px] px-[20px] ${
-          resolvedTheme === "light"
-            ? "bg-[#b6e7f1] text-black"
-            : "bg-[#032830] text-cyan-300"
-        }`}
-      >
+      <div className={`${containerBaseClass} ${containerThemeClass}`}>
         <h2 className="text-[16px] font-[800]">
           Data source (
           <Link href="/methodology" className="underline">

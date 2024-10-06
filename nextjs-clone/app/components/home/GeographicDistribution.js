@@ -1,10 +1,25 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import GeographicDiversityStats from "./GeographicDiversityStats";
 import { useCustomTheme } from "./GetTheme";
 
 const GeographicDistribution = () => {
   const resolvedTheme = useCustomTheme();
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const btnBaseClass = "px-[15px] py-[8px] rounded-[8px] text-[15px] opacity-90";
+
+  // Only apply theme-specific styles after mounting
+  const btnThemeClass = mounted
+    ? resolvedTheme === "light"
+      ? "bg-black text-white"
+      : "bg-white text-black"
+    : "bg-black text-white";
 
   return (
     <div
@@ -19,13 +34,7 @@ const GeographicDistribution = () => {
           href="https://www.rated.network/?network=mainnet&view=pool&timeWindow=1d&page=1&poolType=all"
           target="_blank"
         >
-          <button
-            className={`px-[15px] py-[8px] rounded-[8px] text-[15px] opacity-90 ${
-              resolvedTheme === "light"
-                ? "bg-black text-white"
-                : "bg-white text-black"
-            }`}
-          >
+          <button className={`${btnBaseClass} ${btnThemeClass}`}>
             View Staking Pool Diversity
           </button>
         </Link>

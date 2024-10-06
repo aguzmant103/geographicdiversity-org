@@ -40,10 +40,13 @@ body {
 
 .client-logos {
   height: 8rem;
+  width: auto;
 }
+
 @media (max-width: 25em) {
   .client-logos {
     height: 5rem;
+    width: auto;
   }
 }
 

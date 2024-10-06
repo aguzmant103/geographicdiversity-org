@@ -1,9 +1,18 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useCustomTheme } from "./GetTheme";
 
 const LogoSection = () => {
   const resolvedTheme = useCustomTheme();
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const iconThemeClass = mounted ? resolvedTheme  === "dark" ? 'white-icon' : '' : '';
+  const containerThemeClass = mounted ? resolvedTheme === "dark" ? "bg-[#212529]" : "bg-[#f8f9fa]" : "bg-[#f8f9fa]";
 
   const continents = [
     { src: "/images/continents/africa.svg", alt: "Africa" },
@@ -17,8 +26,7 @@ const LogoSection = () => {
 
   return (
     <div
-      className={`py-[2rem] ${resolvedTheme === "dark" ? "bg-[#212529]" : "bg-[#f8f9fa]"
-        }`}
+      className={`py-[2rem] ${containerThemeClass}`}
     >
       <div className="container my-5">
         <div className="flex flex-wrap -mx-2 justify-center">
@@ -30,7 +38,7 @@ const LogoSection = () => {
                   alt={image.alt}
                   width={100}
                   height={100}
-                  className={`my-1 client-logos ${resolvedTheme === "dark" ? 'white-icon' : ''}`}
+                  className={`my-1 client-logos ${iconThemeClass}`}
                 />
               </div>
             ))
