@@ -4,7 +4,6 @@ import HeroSection from "./components/home/HeroSection";
 import LogoSection from "./components/home/LogoSection";
 import ClientDistribution from "./components/home/GeographicDistribution";
 import ClientDiversity from "./components/home/GeographicDiversity";
-import ClientResources from "./components/home/ClientResources";
 import SwitchClients from "./components/home/SwitchClients";
 import Resources from "./components/home/Resources";
 import Head from "next/head";
@@ -23,7 +22,6 @@ export default function Home() {
       <div className="container">
         <ClientDistribution />
         <ClientDiversity />
-        <ClientResources />
         <SwitchClients />
         <Resources />
       </div>
