@@ -1,10 +1,25 @@
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { GoArrowRight } from "react-icons/go";
 import { useCustomTheme } from "./GetTheme";
 
 const HeroSection = () => {
   const resolvedTheme = useCustomTheme();
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const btnBaseClass = "px-[24px] py-[12px] rounded-[10px] text-[18px] opacity-90";
+
+  // Only apply theme-specific styles after mounting
+  const btnThemeClass = mounted
+    ? resolvedTheme === "light"
+      ? "bg-black text-white"
+      : "bg-white text-black"
+    : "bg-black text-white";
 
   return (
     <div className="flex flex-col justify-center items-center gap-[1rem] h-136">
@@ -16,23 +31,13 @@ const HeroSection = () => {
       </p>
       <div className="flex items-center justify-center flex-wrap gap-[1rem] my-[1rem]">
         <Link href="#switch">
-          <button
-            className={`px-[24px] py-[12px] rounded-[10px] text-[18px] opacity-90 ${
-              resolvedTheme === "dark"
-                ? "bg-white text-black"
-                : "bg-black text-white"
-            }`}
-          >
+          <button className={`${btnBaseClass} ${btnThemeClass}`}>
             Switch Regions
           </button>
         </Link>
         <Link href="#distribution">
           <button
-            className={`px-[24px] py-[10px] rounded-[10px] text-[18px] border ${
-              resolvedTheme === "dark"
-                ? "text-white border-white"
-                : "text-black border-black"
-            }`}
+            className={`px-[24px] py-[10px] rounded-[10px] text-[18px] border ${btnThemeClass}`}
           >
             Dashboard
           </button>

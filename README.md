@@ -11,7 +11,11 @@ Geographic diversity is crucial for maintaining a resilient network. Nodes conce
 Currently, approximately 35% of Ethereum nodes are in the United States, and 14% are in Germany. This concentration poses significant risks, as these regions are vulnerable to localized disruptions. Our initiative aims to address these imbalances and promote a more globally distributed network.
 
 ## Tech Stack
-- Jekyll
+### Frontend
+- NextJS
+- JavaScript
+- TailwindCSS
+### Backend
 - Node.js
 - TypeScript
 - Express
@@ -21,12 +25,11 @@ Currently, approximately 35% of Ethereum nodes are in the United States, and 14%
 ### Frontend
 
 1. Clone the repo (or fork the repo to your account)
-2. Install dependencies: `bundle install`
+2. Go to the frontend folder: `cd nextjs-clone`
+3. Install dependencies: `npm install`
 3. Create a feature branch off of the latest version branch
-4. Start the local server: `bundle exec jekyll serve`
-5. Go to <http://localhost:4000/> to view changes
-
-To build the site use `bundle exec jekyll build`. 
+4. Start the local server: `npm run dev`
+5. Go to <http://localhost:3000/> to view changes
 
 ### Backend
 
@@ -34,22 +37,15 @@ To build the site use `bundle exec jekyll build`.
 2. Install dependencies: `npm install`
 3. Create a feature branch off of the latest version branch
 4. Start the local server: `npm run start`
-5. Go to <http://localhost:3000/api/getnodewatchdata> to view nodewatch data
-6. Add `?fetch=true` in order to refresh the data: <http://localhost:3000/api/getnodewatchdata?fetch=true>
+5. Go to <http://localhost:3001/api/getnodewatchdata> to view nodewatch data
+6. Add `?fetch=true` in order to refresh the data: <http://localhost:3001/api/getnodewatchdata?fetch=true>
 
 To build the site use `npm run build`.
 
-
 ## Resources:
 
-- [Jekyll Docs](https://jekyllrb.com/docs/)
-- [Liquid Syntax](https://shopify.github.io/liquid/basics/introduction/)
+- [NextJS](https://nextjs.org/docs)
 - [nodewatch.io](https://api.nodewatch.io)
-
-## Updating Content
-
-- Data: `_data/nodewatch.json`
-- Rest of the content is within `index.md` as raw html
 
 ## Contributors
 
