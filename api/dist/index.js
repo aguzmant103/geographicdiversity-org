@@ -16,12 +16,12 @@ const express_1 = __importDefault(require("express"));
 const fs_1 = __importDefault(require("fs"));
 const fetchData_1 = require("./fetchData");
 const app = (0, express_1.default)();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 app.get('/api/getnodewatchdata', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { fetch } = req.query;
     if (fetch)
         yield (0, fetchData_1.run)();
-    fs_1.default.readFile('../_data/nodewatch.json', 'utf8', (err, data) => {
+    fs_1.default.readFile('../nextjs-clone/app/data/nodewatch.json', 'utf8', (err, data) => {
         if (err) {
             console.error('Error reading file:', err);
             res.status(500).json({ error: 'Failed to read data file' });

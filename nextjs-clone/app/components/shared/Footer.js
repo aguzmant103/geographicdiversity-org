@@ -8,11 +8,11 @@ const Footer = () => {
       <p className="opacity-70 text-center my-[1rem]">
         Made by{" "}
         <Link
-          href="https://etheralpha.org/"
+          href="https://ethereumcr.org/"
           target="_blank"
           className="text-blue-600 underline"
         >
-          Ether Alpha
+          Ethereum Costa Rica
         </Link>{" "}
         with ❤️
       </p>

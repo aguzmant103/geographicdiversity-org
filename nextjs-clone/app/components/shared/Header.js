@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import ThemeSwitch from "./ThemeSwitch";
@@ -8,16 +8,24 @@ import { useCustomTheme } from "../home/GetTheme";
 
 const Header = () => {
   const [click, setClick] = useState(false);
+  const { resolvedTheme = 'light' } = useCustomTheme() || {};
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleClick = () => {
     setClick(!click);
   };
-  const resolvedTheme = useCustomTheme();
+
+  const themeClass = mounted && resolvedTheme === "light" ? "text-black" : "text-white";
+
   return (
     <div className="container relative">
       <RxHamburgerMenu
         className={`absolute top-[1rem] left-[1rem] md:left-0 text-[2rem] md:hidden z-20 ${
-          resolvedTheme === "light" ? "text-black" : "text-white"
+          mounted ? themeClass : ''
         }`}
         onClick={handleClick}
       />
@@ -41,7 +49,7 @@ const Header = () => {
           </Link>
         </ul>
       </nav>
-      <div className="absolute top-[1rem] right-[1rem] md:right-0 cursor-pointer z-20">
+      <div className="absolute top-[1rem] right-[1rem] md:right-5 cursor-pointer z-20">
         <ThemeSwitch />
       </div>
     </div>
