@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Bar from "./Bar";
 import nodewatchData from "@/app/data/nodewatch.json";
 import Link from "next/link";
-import { useCustomTheme } from "./GetTheme";
+import { useCustomTheme } from "../../hooks/useCustomTheme";
 
 const processJsonData = (jsonData) => {
   const totalPercentages = {};

@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.run = run;
 const axios_1 = __importDefault(require("axios"));
 const fs_1 = __importDefault(require("fs"));
-const FOLDER_PATH = '../nextjs-clone/app/data/';
+const FOLDER_PATH = '../frontend/app/data/';
 // Function to fetch data
 function fetchData(endpoint, query) {
     return __awaiter(this, void 0, void 0, function* () {

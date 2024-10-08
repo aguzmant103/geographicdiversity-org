@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { useCustomTheme } from "./GetTheme";
+import { useCustomTheme } from "../../hooks/useCustomTheme";
 
 const LogoSection = () => {
   const resolvedTheme = useCustomTheme();

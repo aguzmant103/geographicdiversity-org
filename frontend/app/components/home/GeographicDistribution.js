@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import GeographicDiversityStats from "./GeographicDiversityStats";
-import { useCustomTheme } from "./GetTheme";
+import { useCustomTheme } from "../../hooks/useCustomTheme";
 
 const GeographicDistribution = () => {
   const resolvedTheme = useCustomTheme();

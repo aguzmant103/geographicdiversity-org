@@ -25,7 +25,7 @@ Currently, approximately 35% of Ethereum nodes are in the United States, and 14%
 ### Frontend
 
 1. Clone the repo (or fork the repo to your account)
-2. Go to the frontend folder: `cd nextjs-clone`
+2. Go to the frontend folder: `cd frontend`
 3. Install dependencies: `npm install`
 3. Create a feature branch off of the latest version branch
 4. Start the local server: `npm run dev`

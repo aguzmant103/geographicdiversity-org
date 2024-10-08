@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { GoArrowRight } from "react-icons/go";
-import { useCustomTheme } from "./GetTheme";
+import { useCustomTheme } from "../../hooks/useCustomTheme";
 
 const HeroSection = () => {
   const resolvedTheme = useCustomTheme();

@@ -10,7 +10,7 @@ app.get('/api/getnodewatchdata', async (req, res) => {
 
     if (fetch) await run();
 
-    fs.readFile('../nextjs-clone/app/data/nodewatch.json', 'utf8', (err, data) => {
+    fs.readFile('../frontend/app/data/nodewatch.json', 'utf8', (err, data) => {
         if (err) {
             console.error('Error reading file:', err);
             res.status(500).json({ error: 'Failed to read data file' });

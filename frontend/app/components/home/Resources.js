@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { useCustomTheme } from "./GetTheme";
+import { useCustomTheme } from "../../hooks/useCustomTheme";
 
 const Resources = () => {
   const resolvedTheme = useCustomTheme();

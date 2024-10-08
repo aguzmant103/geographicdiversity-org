@@ -2,18 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
-import Faq from "react-faq-component";
-import FaqContent from "./FaqContent";
-import { useCustomTheme } from "./GetTheme";
-
-const data = {
-  rows: [
-    {
-      title: "Further reading...",
-      content: <FaqContent />,
-    },
-  ],
-};
+import { useCustomTheme } from "../../hooks/useCustomTheme";
 
 const GeographicDiversity = () => {
   const resolvedTheme = useCustomTheme();
@@ -46,7 +35,7 @@ const GeographicDiversity = () => {
         It&apos;s not only important —{" "}
         <span className="font-[700]">it&apos;s critical.</span> In the event of a geopolitical crisis
           or natural disaster, nodes concentrated in a specific region face a heightened risk 
-          of compromise, potentially jeopardizing the security and availability of the network's data. [
+          of compromise, potentially jeopardizing the security and availability of the network's data [
         <Link
           href="https://medium.com/archethic/from-china-to-antarctica-the-importance-of-geographical-diversity-in-blockchain-node-distribution-a6d4a366155b"
           target="_blank"
@@ -61,7 +50,7 @@ const GeographicDiversity = () => {
       The Ethereum network is designed to operate continuously, every hour of every day, throughout 
       the year. Blockchain networks can maintain exceptionally high uptime levels due to their 
       decentralized nature. Any move towards greater centralization in significant aspects heightens 
-      the risk of network disruptions and potential devaluation of ETH. [
+      the risk of network disruptions and potential devaluation of ETH [
         <Link
           href="https://www.hivemind.capital/content/the-importance-of-ethereum-staking-diversity"
           target="_blank"
@@ -91,10 +80,6 @@ const GeographicDiversity = () => {
         the trade-offs that blockchain network developers must carefully evaluate 
         when scaling their networks.
       </p>
-
-      <div className="w-full md:w-[60%] mx-auto border-[1px] border-gray-200 px-[10px]">
-        <Faq data={data} styles={styles} config={config} />
-      </div>
     </div>
   );
 };

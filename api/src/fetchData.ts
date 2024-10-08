@@ -1,7 +1,7 @@
 import axios from 'axios';
 import fs from 'fs';
 
-const FOLDER_PATH = '../nextjs-clone/app/data/';
+const FOLDER_PATH = '../frontend/app/data/';
 
 // Function to fetch data
 async function fetchData(endpoint: string, query: string) {

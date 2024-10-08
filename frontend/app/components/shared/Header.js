@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import ThemeSwitch from "./ThemeSwitch";
-import { useCustomTheme } from "../home/GetTheme";
+import { useCustomTheme } from "../../hooks/useCustomTheme";
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -38,13 +38,13 @@ const Header = () => {
           <Link href="/">
             <li>Home</li>
           </Link>
-          <Link href="">
+          <Link href="#distribution">
             <li>Dashboard</li>
           </Link>
           <Link href="/methodology">
             <li>Methodology</li>
           </Link>
-          <Link href="">
+          <Link href="https://github.com/Ethereum-Costa-Rica/geographicdiversity-org" target="_blank">
             <li>Contribute</li>
           </Link>
         </ul>

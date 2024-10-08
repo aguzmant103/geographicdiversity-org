@@ -2,8 +2,8 @@
 
 import HeroSection from "./components/home/HeroSection";
 import LogoSection from "./components/home/LogoSection";
-import ClientDistribution from "./components/home/GeographicDistribution";
-import ClientDiversity from "./components/home/GeographicDiversity";
+import GeographicDistribution from "./components/home/GeographicDistribution";
+import GeographicDiversity from "./components/home/GeographicDiversity";
 import SwitchClients from "./components/home/SwitchClients";
 import Resources from "./components/home/Resources";
 import Head from "next/head";
@@ -20,8 +20,8 @@ export default function Home() {
       <LogoSection />
 
       <div className="container">
-        <ClientDistribution />
-        <ClientDiversity />
+        <GeographicDistribution />
+        <GeographicDiversity />
         <SwitchClients />
         <Resources />
       </div>
