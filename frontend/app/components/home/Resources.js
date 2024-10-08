@@ -85,18 +85,6 @@ const Resources = () => {
           <h2 className="text-[20px] font-[600] opacity-90">Metrics</h2>
           <ul className="flex flex-col gap-[5px]">
             <Link
-              href="https://www.rated.network/?network=mainnet&view=pool&timeWindow=1d&page=1&poolType=all"
-              target="_blank"
-              className="flex items-center gap-[10px]"
-            >
-              <div
-                className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
-              ></div>
-              <li className="text-blue-600 underline">
-                Staking Pool Geographic Diversity
-              </li>
-            </Link>
-            <Link
               href="https://monitoreth.io/"
               target="_blank"
               className="flex items-center gap-[10px]"
@@ -117,16 +105,14 @@ const Resources = () => {
               <li className="text-blue-600 underline">Chainsafe Nodewatch</li>
             </Link>
             <Link
-              href="https://github.com/sigp/blockprint/blob/main/docs/api.md"
+              href="https://ethernodes.org/countries"
               target="_blank"
               className="flex items-center gap-[10px]"
             >
               <div
                 className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
               ></div>
-              <li className="text-blue-600 underline">
-                Proposer Diversity Data
-              </li>
+              <li className="text-blue-600 underline">Ethernodes (by country)</li>
             </Link>
             <Link
               href="https://www.rated.network/?network=mainnet&view=pool&timeWindow=1d&page=1&poolType=all"
@@ -141,7 +127,7 @@ const Resources = () => {
               </li>
             </Link>
             <Link
-              href="https://www.slashed.info/"
+              href="https://etherscan.io/nodetracker"
               target="_blank"
               className="flex items-center gap-[10px]"
             >
@@ -149,7 +135,7 @@ const Resources = () => {
                 className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
               ></div>
               <li className="text-blue-600 underline">
-                Financial Risk Per Consensus Client
+                Ethereum Node Tracker
               </li>
             </Link>
           </ul>
@@ -159,17 +145,17 @@ const Resources = () => {
           <h2 className="text-[20px] font-[600] opacity-90">Research</h2>
           <ul className="flex flex-col gap-[5px]">
             <Link
-              href="https://twitter.com/sproulM_/status/1440512518242197516"
+              href="https://ethresear.ch/t/estimating-validator-decentralization-using-p2p-data/19920"
               target="_blank"
               className="flex items-center gap-[10px]"
             >
               <div
                 className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
               ></div>
-              <li className="text-blue-600 underline">Client Fingerprinting</li>
+              <li className="text-blue-600 underline">Estimating validator decentralization</li>
             </Link>
             <Link
-              href="https://eips.ethereum.org/EIPS/eip-3076"
+              href="https://arxiv.org/pdf/2305.17771"
               target="_blank"
               className="flex items-center gap-[10px]"
             >
@@ -177,7 +163,7 @@ const Resources = () => {
                 className={`w-[8px] h-[8px] rounded-full bg-${listColor}`}
               ></div>
               <li className="text-blue-600 underline">
-                EIP-3076: Slashing Protection Interchange Format
+                Analyzing Geospatial Distributions in Blockchains
               </li>
             </Link>
           </ul>
