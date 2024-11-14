@@ -1,10 +1,23 @@
 import Link from "next/link";
-import React from "react";
+
+import React, { useEffect, useState } from "react";
 import { useCustomTheme } from "../../hooks/useCustomTheme";
 
 const Resources = () => {
   const resolvedTheme = useCustomTheme();
-  const listColor = resolvedTheme === "light" ? "black" : "white";
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const listColor = mounted ? resolvedTheme === "light" ? "black" : "white" : "black";
+
+  const linkThemeClass = mounted
+    ? resolvedTheme === "light"
+      ? "text-blue-800"
+      : "text-blue-400"
+    : "text-blue-800";
 
   return (
     <div className="py-[7rem] w-full lg:w-[80%] mx-auto">
@@ -24,7 +37,7 @@ const Resources = () => {
               <div
                 className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
               ></div>
-              <li className="text-blue-600 underline">
+              <li className={`${linkThemeClass} underline hover:text-slate-500`}>
                 Awesome Ethereum Staking Resources
               </li>
             </Link>
@@ -36,7 +49,9 @@ const Resources = () => {
               <div
                 className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
               ></div>
-              <li className="text-blue-600 underline">Stereum</li>
+              <li className={`${linkThemeClass} underline hover:text-slate-500`}>
+                Stereum
+              </li>
             </Link>
             <Link
               href="https://eth-docker.net/"
@@ -46,7 +61,9 @@ const Resources = () => {
               <div
                 className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
               ></div>
-              <li className="text-blue-600 underline">Eth-Docker</li>
+              <li className={`${linkThemeClass} underline hover:text-slate-500`}>
+                Eth-Docker
+              </li>
             </Link>
             <Link
               href="https://github.com/attestantio/vouch"
@@ -56,7 +73,9 @@ const Resources = () => {
               <div
                 className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
               ></div>
-              <li className="text-blue-600 underline">Vouch</li>
+              <li className={`${linkThemeClass} underline hover:text-slate-500`}>
+                Vouch
+              </li>
             </Link>
             <Link
               href="https://github.com/ethereum/keymanager-APIs"
@@ -66,7 +85,9 @@ const Resources = () => {
               <div
                 className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
               ></div>
-              <li className="text-blue-600 underline">Keymanager APIs</li>
+              <li className={`${linkThemeClass} underline hover:text-slate-500`}>
+                Keymanager APIs
+              </li>
             </Link>
             <Link
               href="https://kotal.co/"
@@ -76,7 +97,9 @@ const Resources = () => {
               <div
                 className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
               ></div>
-              <li className="text-blue-600 underline">Kotal</li>
+              <li className={`${linkThemeClass} underline hover:text-slate-500`}>
+                Kotal
+              </li>
             </Link>
           </ul>
         </div>
@@ -92,7 +115,9 @@ const Resources = () => {
               <div
                 className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
               ></div>
-              <li className="text-blue-600 underline">Miga Labs Dashboard</li>
+              <li className={`${linkThemeClass} underline hover:text-slate-500`}>
+                Miga Labs Dashboard
+              </li>
             </Link>
             <Link
               href="https://nodewatch.io/"
@@ -102,7 +127,9 @@ const Resources = () => {
               <div
                 className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
               ></div>
-              <li className="text-blue-600 underline">Chainsafe Nodewatch</li>
+              <li className={`${linkThemeClass} underline hover:text-slate-500`}>
+                Chainsafe Nodewatch
+              </li>
             </Link>
             <Link
               href="https://ethernodes.org/countries"
@@ -112,7 +139,9 @@ const Resources = () => {
               <div
                 className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
               ></div>
-              <li className="text-blue-600 underline">Ethernodes (by country)</li>
+              <li className={`${linkThemeClass} underline hover:text-slate-500`}>
+                Ethernodes (by country)
+              </li>
             </Link>
             <Link
               href="https://www.rated.network/?network=mainnet&view=pool&timeWindow=1d&page=1&poolType=all"
@@ -122,7 +151,7 @@ const Resources = () => {
               <div
                 className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
               ></div>
-              <li className="text-blue-600 underline">
+              <li className={`${linkThemeClass} underline hover:text-slate-500`}>
                 Rated.Network Validator Ratings
               </li>
             </Link>
@@ -134,7 +163,7 @@ const Resources = () => {
               <div
                 className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
               ></div>
-              <li className="text-blue-600 underline">
+              <li className={`${linkThemeClass} underline hover:text-slate-500`}>
                 Ethereum Node Tracker
               </li>
             </Link>
@@ -152,7 +181,9 @@ const Resources = () => {
               <div
                 className={`w-[7px] h-[7px] rounded-full bg-${listColor}`}
               ></div>
-              <li className="text-blue-600 underline">Estimating validator decentralization</li>
+              <li className={`${linkThemeClass} underline hover:text-slate-500`}>
+                Estimating validator decentralization
+              </li>
             </Link>
             <Link
               href="https://arxiv.org/pdf/2305.17771"
@@ -162,7 +193,7 @@ const Resources = () => {
               <div
                 className={`w-[8px] h-[8px] rounded-full bg-${listColor}`}
               ></div>
-              <li className="text-blue-600 underline">
+              <li className={`${linkThemeClass} underline hover:text-slate-500`}>
                 Analyzing Geospatial Distributions in Blockchains
               </li>
             </Link>

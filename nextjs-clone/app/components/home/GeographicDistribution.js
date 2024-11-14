@@ -12,7 +12,8 @@ const GeographicDistribution = () => {
     setMounted(true);
   }, []);
 
-  const btnBaseClass = "px-[15px] py-[8px] rounded-[8px] text-[15px] opacity-90";
+  const btnBaseClass =
+    "px-[15px] py-[8px] rounded-[8px] text-[15px] opacity-90";
 
   // Only apply theme-specific styles after mounting
   const btnThemeClass = mounted
@@ -34,7 +35,7 @@ const GeographicDistribution = () => {
           href="https://www.rated.network/?network=mainnet&view=pool&timeWindow=1d&page=1&poolType=all"
           target="_blank"
         >
-          <button className={`${btnBaseClass} ${btnThemeClass}`}>
+          <button className={`${btnBaseClass} ${btnThemeClass} hover:bg-slate-500`}>
             View Staking Pool Diversity
           </button>
         </Link>

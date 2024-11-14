@@ -9,14 +9,17 @@ import { useCustomTheme } from "../../hooks/useCustomTheme";
 const processJsonData = (jsonData) => {
   const totalPercentages = {};
 
-  jsonData.data.forEach(region => {
+  jsonData.data.forEach((region) => {
     const regionName = region.name;
     const regionData = region.data;
 
     if (regionData.countries) {
-      const regionTotal = Object.values(regionData.countries).reduce((sum, country) => {
-        return sum + (country.perc?.countries || 0);
-      }, 0);
+      const regionTotal = Object.values(regionData.countries).reduce(
+        (sum, country) => {
+          return sum + (country.perc?.countries || 0);
+        },
+        0
+      );
 
       totalPercentages[regionName] = regionTotal.toFixed(2);
     }
@@ -35,7 +38,13 @@ const RegionPercentages = ({ jsonData }) => {
           key={regionName}
           title={regionName}
           percentage={percentage}
-          color={percentage > 50 ? "#dc3545" : percentage > 33 ? "#ffc107" : "#198754"}
+          color={
+            percentage > 50
+              ? "#dc3545"
+              : percentage > 33
+              ? "#ffc107"
+              : "#198754"
+          }
         />
       ))}
     </div>
@@ -54,7 +63,8 @@ const GeographicDiversityStats = () => {
     setMounted(true);
   }, []);
 
-  const containerBaseClass = "opacity-80 border-[1px] border-cyan-500 rounded-[8px] flex flex-col items-center py-[10px] px-[20px]";
+  const containerBaseClass =
+    "opacity-80 border-[1px] border-cyan-500 rounded-[8px] flex flex-col items-center py-[10px] px-[20px]";
 
   // Only apply theme-specific styles after mounting
   const containerThemeClass = mounted
@@ -62,6 +72,12 @@ const GeographicDiversityStats = () => {
       ? "bg-[#b6e7f1] text-black"
       : "bg-[#032830] text-cyan-300"
     : "bg-[#b6e7f1] text-black";
+
+  const linkThemeClass = mounted
+    ? resolvedTheme === "light"
+      ? "text-blue-800"
+      : "text-blue-400"
+    : "text-blue-800";
 
   useEffect(() => {
     handleToggle(activeRadio);
@@ -89,7 +105,7 @@ const GeographicDiversityStats = () => {
             <Link
               href="https://nodewatch.io/"
               target="_blank"
-              className="text-blue-600 underline"
+              className={`${linkThemeClass} underline hover:text-slate-500`}
             >
               nodewatch.io
             </Link>{" "}
@@ -99,7 +115,10 @@ const GeographicDiversityStats = () => {
 
         <p className="text-[14px] opacity-90 text-center">
           Data may not be 100% accurate. (
-          <Link href="/methodology" className="text-blue-600 underline">
+          <Link
+            href="/methodology"
+            className={`${linkThemeClass} underline hover:text-slate-500`}
+          >
             Read more
           </Link>
           )
@@ -109,7 +128,7 @@ const GeographicDiversityStats = () => {
       <div className={`${containerBaseClass} ${containerThemeClass}`}>
         <h2 className="text-[16px] font-[800]">
           Data source (
-          <Link href="/methodology" className="underline">
+          <Link href="/methodology" className="underline hover:text-slate-500">
             read more
           </Link>
           ):
