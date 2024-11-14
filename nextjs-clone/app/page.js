@@ -4,7 +4,7 @@ import HeroSection from "./components/home/HeroSection";
 import LogoSection from "./components/home/LogoSection";
 import GeographicDistribution from "./components/home/GeographicDistribution";
 import GeographicDiversity from "./components/home/GeographicDiversity";
-import SwitchClients from "./components/home/SwitchClients";
+import IncentivationPrograms from "./components/home/IncentivationPrograms";
 import Resources from "./components/home/Resources";
 import Head from "next/head";
 
@@ -22,7 +22,7 @@ export default function Home() {
       <div className="container">
         <GeographicDistribution />
         <GeographicDiversity />
-        <SwitchClients />
+        <IncentivationPrograms />
         <Resources />
       </div>
     </>
