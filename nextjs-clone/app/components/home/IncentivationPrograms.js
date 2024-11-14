@@ -1,9 +1,7 @@
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import GeographicDiversityStats from "./GeographicDiversityStats";
 import { useCustomTheme } from "../../hooks/useCustomTheme";
 
-const IncentivationPrograms = () => {
+const IncentivePrograms = () => {
   const resolvedTheme = useCustomTheme();
 
   const [mounted, setMounted] = useState(false);
@@ -155,4 +153,4 @@ const IncentivationPrograms = () => {
   );
 };
 
-export default IncentivationPrograms;
+export default IncentivePrograms;
