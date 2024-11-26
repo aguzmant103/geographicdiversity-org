@@ -1,7 +1,23 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { useCustomTheme } from "../../hooks/useCustomTheme";
 
 const Footer = () => {
+  const resolvedTheme = useCustomTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const linkThemeClass = mounted
+    ? resolvedTheme === "light"
+      ? "text-blue-800"
+      : "text-blue-400"
+    : "text-blue-800";
+
   return (
     <div className="container">
       <hr />
@@ -10,7 +26,7 @@ const Footer = () => {
         <Link
           href="https://ethereumcr.org/"
           target="_blank"
-          className="text-blue-600 underline"
+          className={`${linkThemeClass} underline hover:text-slate-500`}
         >
           Ethereum Costa Rica
         </Link>{" "}

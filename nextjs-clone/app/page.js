@@ -2,10 +2,9 @@
 
 import HeroSection from "./components/home/HeroSection";
 import LogoSection from "./components/home/LogoSection";
-import ClientDistribution from "./components/home/GeographicDistribution";
-import ClientDiversity from "./components/home/GeographicDiversity";
-import ClientResources from "./components/home/ClientResources";
-import SwitchClients from "./components/home/SwitchClients";
+import GeographicDistribution from "./components/home/GeographicDistribution";
+import GeographicDiversity from "./components/home/GeographicDiversity";
+import IncentivePrograms from "./components/home/IncentivePrograms";
 import Resources from "./components/home/Resources";
 import Head from "next/head";
 
@@ -21,10 +20,9 @@ export default function Home() {
       <LogoSection />
 
       <div className="container">
-        <ClientDistribution />
-        <ClientDiversity />
-        <ClientResources />
-        <SwitchClients />
+        <GeographicDistribution />
+        <GeographicDiversity />
+        <IncentivePrograms />
         <Resources />
       </div>
     </>
