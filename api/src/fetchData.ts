@@ -34,42 +34,26 @@ function saveToFile(data: any, fileName: string) {
     console.error('Error saving data:', error);
   }
 }
-const BOUNDS = [
+
+const CONTINENT_BOUNDS = [
   // Africa
-  { name: "Northern Africa", latBounds: [20, 37], longBounds: [-25, 35] },
-  { name: "Western Africa", latBounds: [-5, 20], longBounds: [-20, 20] },
-  { name: "Central Africa", latBounds: [-10, 5], longBounds: [10, 30] },
-  { name: "Eastern Africa", latBounds: [-15, 12], longBounds: [20, 51] },
-  { name: "Southern Africa", latBounds: [-35, -10], longBounds: [10, 40] },
+  { name: "Africa", latBounds: [-35, 37], longBounds: [-25, 51] },
 
   // Asia
-  { name: "Northern Asia", latBounds: [50, 81], longBounds: [30, 180] },
-  { name: "Central Asia", latBounds: [35, 50], longBounds: [50, 85] },
-  { name: "Western Asia", latBounds: [12, 42], longBounds: [30, 65] },
-  { name: "South Asia", latBounds: [5, 35], longBounds: [60, 95] },
-  { name: "Eastern Asia", latBounds: [20, 55], longBounds: [95, 150] },
-  { name: "Southeastern Asia", latBounds: [-10, 20], longBounds: [95, 140] },
+  { name: "Asia", latBounds: [-10, 81], longBounds: [30, 180] },
 
   // Europe
-  { name: "Northern Europe", latBounds: [55, 70], longBounds: [-25, 60] },
-  { name: "Western Europe", latBounds: [45, 55], longBounds: [-10, 15] },
-  { name: "Southern Europe", latBounds: [35, 45], longBounds: [-10, 40] },
-  { name: "Eastern Europe", latBounds: [45, 70], longBounds: [20, 60] },
-  { name: "Central Europe", latBounds: [45, 55], longBounds: [5, 25] },
+  { name: "Europe", latBounds: [35, 70], longBounds: [-25, 60] },
 
   // America
-  { name: "North America", latBounds: [15, 85], longBounds: [-170, -50] },
-  { name: "Central America", latBounds: [5, 20], longBounds: [-120, -75] },
-  { name: "South America", latBounds: [-55, 15], longBounds: [-80, -35] },
-  { name: "Caribbean", latBounds: [10, 25], longBounds: [-90, -60] },
+  { name: "America", latBounds: [-55, 85], longBounds: [-170, -35] },
 
   // Oceania
-  { name: "Oceania", latBounds: [-45, 15], longBounds: [113, 180] },
-  { name: "South Island, New Zealand", latBounds: [-47, -34], longBounds: [165, 179] }
+  { name: "Oceania", latBounds: [-45, 15], longBounds: [113, 180] }
 ]
 
 function assign_continent(latitud: any, longitud: any): string {
-  for (const continent of BOUNDS) {
+  for (const continent of CONTINENT_BOUNDS) {
     //assign latitude range
     const [latitude_min, latitude_max] = continent.latBounds;
     //assign longitude range
@@ -80,7 +64,7 @@ function assign_continent(latitud: any, longitud: any): string {
       return continent.name;
     }
   }
-  return "Others Regions";
+  return "Other Regions";
 }
 
 // Transform data to expected format

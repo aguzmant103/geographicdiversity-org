@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { GoArrowRight } from "react-icons/go";
-import { useCustomTheme } from "./GetTheme";
+import { useCustomTheme } from "../../hooks/useCustomTheme";
 
 const HeroSection = () => {
   const resolvedTheme = useCustomTheme();
@@ -12,7 +12,8 @@ const HeroSection = () => {
     setMounted(true);
   }, []);
 
-  const btnBaseClass = "px-[24px] py-[12px] rounded-[10px] text-[18px] opacity-90";
+  const btnBaseClass =
+    "px-[24px] py-[12px] rounded-[10px] text-[18px] opacity-90";
 
   // Only apply theme-specific styles after mounting
   const btnThemeClass = mounted
@@ -30,21 +31,16 @@ const HeroSection = () => {
         Improve Ethereum&apos;s resilience by staking in minority regions
       </p>
       <div className="flex items-center justify-center flex-wrap gap-[1rem] my-[1rem]">
-        <Link href="#switch">
-          <button className={`${btnBaseClass} ${btnThemeClass}`}>
-            Switch Regions
-          </button>
-        </Link>
         <Link href="#distribution">
           <button
-            className={`px-[24px] py-[10px] rounded-[10px] text-[18px] border ${btnThemeClass}`}
+            className={`px-[24px] py-[10px] rounded-[10px] text-[18px] border ${btnThemeClass} hover:bg-slate-500`}
           >
             Dashboard
           </button>
         </Link>
       </div>
       <Link href="#diversity" className="flex items-center gap-[5px]">
-        <p className="text-[18px] opacity-80 underline">Learn More</p>
+        <p className="text-[18px] opacity-80 underline hover:text-slate-500">Learn More</p>
         <GoArrowRight className="text-[18px] opacity-80" />
       </Link>
     </div>

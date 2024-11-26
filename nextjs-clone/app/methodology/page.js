@@ -1,9 +1,24 @@
 "use client";
 
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
+import { useCustomTheme } from "../hooks/useCustomTheme";
 
 export default function Methodology() {
+  const resolvedTheme = useCustomTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const linkThemeClass = mounted
+    ? resolvedTheme === "light"
+      ? "text-blue-800"
+      : "text-blue-400"
+    : "text-blue-800";
+
   return (
     <>
       <Head>
@@ -16,15 +31,17 @@ export default function Methodology() {
               Data Methodology
             </h1>
             <p className="">
-            Our data methodology is designed to provide accurate and insightful analysis of client distribution and 
-            geographic information. We source our data from{' '}
-            <Link
+              Our data methodology is designed to provide accurate and
+              insightful analysis of client distribution and geographic
+              information. We source our data from{" "}
+              <Link
                 href="https://nodewatch.io/"
-                className="text-blue-600 underline"
+                className={`${linkThemeClass} underline hover:text-slate-500`}
               >
                 Nodewatch.io
               </Link>
-            , a platform specializing in detailed network metrics. Here&apos;s an overview of our approach:
+              , a platform specializing in detailed network metrics. Here&apos;s
+              an overview of our approach:
             </p>
           </div>
 
@@ -33,7 +50,9 @@ export default function Methodology() {
               Data Collection
             </h2>
             <p className="">
-              We gather data from Nodewatch.io, which offers comprehensive details about client types, countries, and geographic coordinates (latitude and longitude).
+              We gather data from Nodewatch.io, which offers comprehensive
+              details about client types, countries, and geographic coordinates
+              (latitude and longitude).
             </p>
           </div>
 
@@ -42,29 +61,40 @@ export default function Methodology() {
               Data Processing
             </h2>
             <p className="">
-              The raw data is processed through several steps to generate valuable insights:
+              The raw data is processed through several steps to generate
+              valuable insights:
             </p>
             <h3 className="text-[20px] md:text-[24px] font-[600] mb-[12px]">
               Geographic Categorization:
             </h3>
             <p className="">
-              Each entry in the dataset is categorized by continent based on its latitude and longitude. This classification helps us organize the data regionally for more targeted analysis.
+              Each entry in the dataset is categorized by continent based on its
+              latitude and longitude. This classification helps us organize the
+              data regionally for more targeted analysis.
             </p>
             <h3 className="text-[20px] md:text-[24px] font-[600] mb-[12px]">
               Data Aggregation:
             </h3>
             <p className="">
-              We aggregate the data to provide a summary of clients and their distribution across continents and countries. This involves calculating the total number of nodes for each client and continent, and then determining the percentage of each client relative to the total.
+              We aggregate the data to provide a summary of clients and their
+              distribution across continents and countries. This involves
+              calculating the total number of nodes for each client and
+              continent, and then determining the percentage of each client
+              relative to the total.
             </p>
             <h3 className="text-[20px] md:text-[24px] font-[600] mb-[12px]">
               Summary and Output:
             </h3>
             <p className="">
-              The processed data is compiled into a structured summary that includes total counts, percentage distributions, and detailed breakdowns by continent and country.
+              The processed data is compiled into a structured summary that
+              includes total counts, percentage distributions, and detailed
+              breakdowns by continent and country.
             </p>
           </div>
           <p className="mt-[2rem]">
-            By following this methodology, we ensure that our data is collected, stored, and processed effectively to deliver accurate and actionable insights into client distribution and geographic patterns.
+            By following this methodology, we ensure that our data is collected,
+            stored, and processed effectively to deliver accurate and actionable
+            insights into client distribution and geographic patterns.
           </p>
         </div>
       </div>

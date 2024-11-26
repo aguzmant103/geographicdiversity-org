@@ -4,11 +4,11 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import ThemeSwitch from "./ThemeSwitch";
-import { useCustomTheme } from "../home/GetTheme";
+import { useCustomTheme } from "../../hooks/useCustomTheme";
 
 const Header = () => {
   const [click, setClick] = useState(false);
-  const { resolvedTheme = 'light' } = useCustomTheme() || {};
+  const { resolvedTheme = "light" } = useCustomTheme() || {};
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -19,13 +19,14 @@ const Header = () => {
     setClick(!click);
   };
 
-  const themeClass = mounted && resolvedTheme === "light" ? "text-black" : "text-white";
+  const themeClass =
+    mounted && resolvedTheme === "light" ? "text-black" : "text-white";
 
   return (
     <div className="container relative">
       <RxHamburgerMenu
         className={`absolute top-[1rem] left-[1rem] md:left-0 text-[2rem] md:hidden z-20 ${
-          mounted ? themeClass : ''
+          mounted ? themeClass : ""
         }`}
         onClick={handleClick}
       />
@@ -35,16 +36,26 @@ const Header = () => {
         } md:flex`}
       >
         <ul className="flex flex-col md:flex-row mt-[2.5rem] md:mt-0 items-start md:items-center gap-[1rem] md:gap-[2rem] opacity-70">
-          <Link href="/">
+          <Link href="/" className="hover:text-slate-500 hover:underline">
             <li>Home</li>
           </Link>
-          <Link href="">
+          <Link
+            href="#distribution"
+            className="hover:text-slate-500 hover:underline"
+          >
             <li>Dashboard</li>
           </Link>
-          <Link href="/methodology">
+          <Link
+            href="/methodology"
+            className="hover:text-slate-500 hover:underline"
+          >
             <li>Methodology</li>
           </Link>
-          <Link href="">
+          <Link
+            href="https://github.com/Ethereum-Costa-Rica/geographicdiversity-org"
+            target="_blank"
+            className="hover:text-slate-500 hover:underline"
+          >
             <li>Contribute</li>
           </Link>
         </ul>
