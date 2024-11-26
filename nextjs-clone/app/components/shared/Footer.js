@@ -24,7 +24,7 @@ const Footer = () => {
       <p className="opacity-70 text-center my-[1rem]">
         Made by{" "}
         <Link
-          href="https://ethereumcr.org/"
+          href="https://ethereum.cr/"
           target="_blank"
           className={`${linkThemeClass} underline hover:text-slate-500`}
         >
